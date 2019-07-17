@@ -3,7 +3,7 @@ class Card {
     this.diseaseColor = diseaseColor;
     this.cityName= cityName;
   }
-  getDiseaseColor() {
+  getDigitseaseColor() {
     return this.diseaseColor;
   }
   getCityName() {
@@ -57,3 +57,4 @@ class Deck {
     console.log('theDeal' + theDeal)
     return theDeal;
   }
+}
