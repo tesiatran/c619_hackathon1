@@ -31,7 +31,7 @@ class BuildCity{
     console.log("Disease spreads through "+this.cityName+"! It now has "+this.diseaseCount+" "+this.diseaseType+" points!")
   }
 
-  renderCity(){
+  render(){
     var cityDiv = $('<div>');
     cityDiv.addClass("city");
     cityDiv.addClass(this.diseaseType);
@@ -44,7 +44,7 @@ class BuildCity{
     $('#'+this.cityName).on('click',  this.clickCity);
   }
 
-  clickCity(){
+  handleClick(){
     console.log("You have clicked "+this.cityName);
   }
 }
