@@ -2,7 +2,7 @@ class BuildCity{
   //Takes in a city name and a continent.
     //Example input: ("New York", "Red" "North America") would create that city's object
   constructor(name, color, container){
-    this.clickCity = this.clickCity.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.cityName = name;
     this.diseaseCount = 0;
     this.diseaseType = color;
@@ -31,17 +31,23 @@ class BuildCity{
     console.log("Disease spreads through "+this.cityName+"! It now has "+this.diseaseCount+" "+this.diseaseType+" points!")
   }
 
-  render(){
+  render(height, width){
     var cityDiv = $('<div>');
     cityDiv.addClass("city");
     cityDiv.addClass(this.diseaseType);
     cityDiv.attr('id', this.cityName);
+    var style = {
+      'background-color': this.actionColor,
+      'height': height,
+      'width': width
+    };
+    cityDiv.css(style);
     cityDiv.appendTo('#'+this.containerId);
     this.addClickHandler();
   }
 
   addClickHandler(){
-    $('#'+this.cityName).on('click',  this.clickCity);
+    $('#'+this.cityName).on('click',  this.handleClick);
   }
 
   handleClick(){
