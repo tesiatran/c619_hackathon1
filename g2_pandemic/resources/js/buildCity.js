@@ -40,7 +40,9 @@ class BuildCity{
   }
 
   addClickHandler(){
-    $('#'+this.cityName).on('click', this.clickCity);
+    $('#'+this.cityName).on('click', function(){
+      console.log("You have clicked");
+    });
   }
 
   clickCity(){
