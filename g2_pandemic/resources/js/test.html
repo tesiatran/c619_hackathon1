@@ -7,12 +7,15 @@
   <title>TEST</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./buildCity.js"></script>
-  <script>
-    var NewYork = new BuildCity("NewYork", "Red", "NorthAmerica");
-  </script>
+
   <link rel="stylesheet" href="touch.css">
 </head>
 <body>
 <div id="NorthAmerica"></div>
 </body>
+  <script>
+    var newYork = new BuildCity("NewYork", "Red", "NorthAmerica");
+    newYork.renderCity();
+    // newYork.addClickHandler();
+  </script>
 </html>

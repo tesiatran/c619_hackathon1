@@ -2,6 +2,7 @@ class BuildCity{
   //Takes in a city name and a continent.
     //Example input: ("New York", "Red" "North America") would create that city's object
   constructor(name, color, container){
+    this.clickCity = this.clickCity.bind(this);
     this.cityName = name;
     this.diseaseCount = 0;
     this.diseaseType = color;
@@ -40,9 +41,7 @@ class BuildCity{
   }
 
   addClickHandler(){
-    $('#'+this.cityName).on('click', function(){
-      console.log("You have clicked");
-    });
+    $('#'+this.cityName).on('click',  this.clickCity);
   }
 
   clickCity(){
