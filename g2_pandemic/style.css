@@ -1,0 +1,214 @@
+body{
+   height: 99vh;
+   width: 99vw;
+   display: inline-block;
+}
+
+.mainGameContainer{
+   height: 98.5%;
+   width: 98.5%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.allPlayersContainer{
+   height: 69%;
+   width: 30%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.mapContainer{
+   height: 69%;
+   width: 69%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.gameStatsContainer{
+   height: 29%;
+   width: 30%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.actionsContainer{
+   height: 29%;
+   width: 68%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.playerContainer{
+   height: 48%;
+   width: 98%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.continentContainer{
+   height: 98%;
+   width: 32.5%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+#NorthAmericaEurope{
+
+}
+
+#SouthAmericaAfrica{
+
+}
+
+#AsiaAustralia{
+
+}
+
+.counterContainer{
+   height: 98%;
+   width: 48%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.playerActionsContainer{
+   height: 98%;
+   width: 48%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.citiesActionsContainer{
+   height: 98%;
+   width: 49%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.playerNameContainer{
+   height: 24%;
+   width: 98%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.playerHandContainer{
+   height: 75%;
+   width: 98%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.cityContainer{
+   height: 19%;
+   width: 99%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+#SanFrancisco{
+
+}
+
+#Atlanta{
+
+}
+
+#NewYork{
+
+}
+
+#Madrid{
+
+}
+
+#London{
+
+}
+
+#Bogota{
+
+}
+
+#Santiago{
+
+}
+
+#SaoPaulo{
+
+}
+
+#Lagos{
+
+}
+
+#Johannesburg{
+
+}
+
+#HongKong{
+
+}
+
+#Osaka{
+
+}
+
+#Manila{
+
+}
+
+#HoChiMinhCity{
+
+}
+
+#Sydney{
+
+}
+
+.possibleMovesContainer{
+   height: 98%;
+   width: 23.5%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+
+.infectCitiesContainer{
+   height: 80%;
+   width: 60%;
+   border: 1px solid;
+   display: inline-block;
+   position: absolute;
+   margin: 5%;
+}
+
+.chosenCitiesContainer{
+   height: 20%;
+   width: 20%;
+   border: 1px solid;
+   display: inline-block;
+   position: absolute;
+}
+
+.playerICContainer{
+   height: 20%;
+   width: 20%;
+   border: 1px solid;
+   display: inline-block;
+   position: absolute;
+}
