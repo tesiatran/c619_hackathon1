@@ -25,4 +25,17 @@ class GameState{
       this.cityObjects[count].render("100px", "100px");
     }
   }
+  //Calls functions to set up game
+  startGame(){
+    //Deal out cards to players
+    //Infect cities
+  }
+  //Calls functions to be called after a player ends their turn
+  endPlayerTurn(){
+
+  }
+  //Calls functions to be called after all player ends their turns
+  endGameTurn(){
+
+  }
 }
