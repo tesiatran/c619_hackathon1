@@ -15,7 +15,7 @@ class Card{
 
 class Deck{
    constructor(){
-      this.cardDeck = ["Atlanta", "Seattle", "London", "Santiago", "SaoPaulo", "Johannesburg", "HongKong", "Sapporo", "Sydney", ];
+      this.cardDeck = ["Atlanta", "Seattle", "London", "Santiago", "Sao Paulo", "Johannesburg", "Hong Kong", "Sapporo", "Sydney"];
    }
 
    dealCards(cardsToDeal){

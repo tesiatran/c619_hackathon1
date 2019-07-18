@@ -12,60 +12,58 @@ var directFlightClicked = null;
 var shuttleFlightClicked = null;
 var treatDiseaseClicked = null;
 
+var player1 = new Player();
+var player2 = new Player();
+
+var playerdeck = new Deck();
+var citydeck = new Deck();
+
+var player1hand = null;
+var player2hand = null;
+
+var p1card1 = null;
+
+var cityAtlanta = new City("Atlanta", "", "");
+var citySeattle = new City("Seattle", "", "");
+var cityLondon = new City("London", "", "");
+var citySantiago = new City("Santiago", "", "");
+var citySaoPaulo = new City("Sao Paulo", "", "");
+var cityJohannesburg = new City("Johannesburg", "", "");
+var cityHongKong = new City("Hong Kong", "", "");
+var citySapporo = new City("Sapporo", "", "");
+var citySydney = new City("Sydney", "", "");
+
+var directFlight = new ActionButton("", "directFlight", "");
+var shuttleFlight = new ActionButton("", "shuttleFlight", "");
+var cure = new ActionButton("", "treatDisease", "");
+
 function initializeApp(){
-   // var playerOne = new Player("red", ".playerOne");
-   // var playerTwo = new Player("purple", ".playerTwo");
-
-   // var player1 = new Player();
-   // console.log(player1);
-   // var player2 = new Player();
-
-   var playerdeck = new Deck();
    playerdeck.shuffle();
-   console.log(playerdeck);
 
-   var player1hand = playerdeck.dealCards(3);
-   var player2hand = playerdeck.dealCards(3);
-
-   console.log(player1hand);
-   console.log(player2hand);
-
-  var directFlight = new ActionButton("", "directFlight", "");
-  directFlight.addClickHandler(test);
-
-  var shuttleFlight = new ActionButton("", "shuttleFlight", "");
-  shuttleFlight.addClickHandler(test);
 
   var treatDisease = new ActionButton("", "treatDisease", "");
   treatDisease.addClickHandler(cure);
 
 
+   player1hand = playerdeck.dealCards(3);
+   player2hand = playerdeck.dealCards(3);
 
-   var cityAtlanta = new City("Atlanta", "", "");
+
+   player1.receiveCards(player1hand);
+   player2.receiveCards(player2hand);
+
+   citySaoPaulo.addDisease();
+   cityLondon.addDisease();
+   citySantiago.addDisease();
+
    cityAtlanta.addClickHandler();
-
-   var citySeattle = new City("Seattle", "", "");
    citySeattle.addClickHandler();
-
-   var cityLondon = new City("London", "", "");
    cityLondon.addClickHandler();
-
-   var citySantiago = new City("Santiago", "", "");
    citySantiago.addClickHandler();
-
-   var citySaoPaulo = new City("SaoPaulo", "", "");
    citySaoPaulo.addClickHandler();
-
-   var cityJohannesburg = new City("Johannesburg", "", "");
    cityJohannesburg.addClickHandler();
-
-   var cityHongKong = new City("HongKong", "", "");
    cityHongKong.addClickHandler();
-
-   var citySapporo = new City("Sapporo", "", "");
    citySapporo.addClickHandler();
-
-   var citySydney = new City("Sydney", "", "");
    citySydney.addClickHandler();
 
 
@@ -76,6 +74,21 @@ function initializeApp(){
   function cure(){
     playerOne.cure();
   }
+
+   directFlight.addClickHandler();
+   shuttleFlight.addClickHandler();
+   cure.addClickHandler();
+
+   for(var index = 0; index < player1hand.length; index++){
+      p1card = player1hand[index];
+      $('#p1card' + (index + 1)).text(p1card);
+   }
+
+   for(var index = 0; index < player2hand.length; index++){
+      p2card = player2hand[index];
+      $('#p2card' + (index + 1)).text(p2card);
+   }
+
 
 }
 var playerOne = new Player("red", ".playerOne");

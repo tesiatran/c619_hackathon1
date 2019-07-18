@@ -28,11 +28,7 @@ class ActionButton {
     this.addClickHandler();
   }
 
-  // addClickHandler(){
-  //   $('#' + this.domId).on('click', this.handleClick);
-  // }
-
   handleClick(){
     console.log("You have clicked " + this.domId);
   }
-} // action-object branch
+}

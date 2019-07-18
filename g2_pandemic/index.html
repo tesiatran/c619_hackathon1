@@ -7,9 +7,9 @@
       <script src="./resources/js/action-button.js"></script>
       <script src="./resources/js/create-player.js"></script>
       <script src="./resources/js/build-city.js"></script>
-      <script src="./resources/js/card-deck.js"></script>
       <script src="./resources/js/game-stats.js"></script>
       <script src="./resources/js/game-state.js"></script>
+      <script src="./resources/js/card-deck.js"></script>
       <script src="./resources/js/main.js"></script>
 
       <script>
@@ -30,10 +30,10 @@
                <div class="playerOneNameContainer"></div>
                <div class="playerHandContainer">
 
-                  <div class="playerICContainer player_1"></div>
-                  <div class="playerICContainer player_1"></div>
-                  <div class="playerICContainer player_1"></div>
-                  <div class="playerICContainer player_1"></div>
+                  <div class="playerICContainer player_1" id="p1card1"></div>
+                  <div class="playerICContainer player_1" id="p1card2"></div>
+                  <div class="playerICContainer player_1" id="p1card3"></div>
+                  <!-- <div class="playerICContainer player_1" id="p1card4"></div> -->
 
                </div>
 
@@ -44,10 +44,10 @@
                <div class="playerTwoNameContainer"></div>
                <div class="playerHandContainer">
 
-                  <div class="playerICContainer"></div>
-                  <div class="playerICContainer"></div>
-                  <div class="playerICContainer"></div>
-                  <div class="playerICContainer"></div>
+                  <div class="playerICContainer" id="p2card1"></div>
+                  <div class="playerICContainer" id="p2card2"></div>
+                  <div class="playerICContainer" id="p2card3"></div>
+                  <!-- <div class="playerICContainer" id="p2card4"></div> -->
 
                </div>
 
@@ -251,37 +251,22 @@
             </div>
          </div>
 
+         <div class="bottomDisplayContainer">
+            <div class="gameStatsContainer">
 
-         <div class="gameStatsContainer">
-
-            <div class="counterContainer" id="outbreak"></div>
-            <div class="counterContainer" id="cure"></div>
-
-         </div>
-
-
-         <div class="actionsContainer">
-
-            <div class="playerActionsContainer">
-
-               <div class="possibleMovesContainer" id="directFlight"></div>
-               <div class="possibleMovesContainer" id="shuttleFlight"></div>
-               <div class="possibleMovesContainer" id="treatDisease"></div>
-               <div class="possibleMovesContainer" id="cureDisease"></div>
+               <div class="counterContainer outbreak" id="outbreak"></div>
+               <div class="counterContainer cure" id="cure"></div>
 
             </div>
 
-            <div class="citiesActionsContainer">
 
-               <div class="infectCitiesContainer"></div>
-               <div class="chosenCitiesContainer"></div>
-               <div class="chosenCitiesContainer"></div>
-
+            <div class="actionsContainer">
+               <div class="directFlight" id="directFlight"></div>
+               <div class="shuttleFlight" id="shuttleFlight"></div>
+               <div class="treatDisease" id="treatDisease"></div>
             </div>
 
          </div>
-
       </div>
-
    </body>
 </html>
