@@ -1,13 +1,13 @@
 class Player {
   constructor(color, playerClass){
-    this.hand = [];
+    this.cards = [];
     this.location = "Atlanta";
     this.color = color;
     this.playerClass = playerClass;
     $(playerClass).hide();
     this.renderMove();
   }
-  recieveCard(inputCards){
+  receiveCards(inputCards){
     for (var i = 0; i < inputCards.length; i++){
       this.cards.push(inputCards[i]);
     }
@@ -19,7 +19,7 @@ class Player {
   }
 
   renderMove(){
-    $('#'+this.location+" "+this.playerClass).show();
+    $('#' + this.location + " " + this.playerClass).show();
   }
 
   directFlight(targetLocation){
@@ -29,5 +29,5 @@ class Player {
     } else {
       console.log("You do not have the card");
     }
-
+  }
 }
