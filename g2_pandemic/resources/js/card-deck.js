@@ -14,8 +14,9 @@ class Card{
 }
 
 class Deck{
-   constructor(){
+   constructor(cardObj){
       this.cards = [];
+      this.cardtoPush = cardObj;
    }
 
    dealCards(cardsToDeal){

@@ -124,8 +124,6 @@ body{
    position: relative;
 }
 .city {
-
-
 width: 60px;
 height: 60px;
 position: relative;
@@ -140,16 +138,31 @@ height: 20px;
 background-color: rgb(51, 186, 150);
 left: 75%;
 }
+#London .city{
+background-color: rgb(51, 186, 150);
+left: 33%;
+
+}
 #HongKong .city {
 background-color:#ee524f;
 left: 28%;
 top: 50%;
+}
+#Sydney .city{
+background-color:#ee524f;
+left: 60%;
+top: 20%;
 }
 
 #Johannesburg .city{
 background-color:#e5d138;
 left: 60%;
 top: 10%;
+}
+#Santiago .city{
+background-color:#e5d138;
+left: 80%;
+top: 30%;
 }
 
 
@@ -245,7 +258,6 @@ top: 10%;
    display: inline-block;
    position: absolute;
 }
-
 .red{
    background-color: red;
 }
@@ -253,7 +265,6 @@ top: 10%;
 .blue{
    background-color: blue;
 }
-
 .yellow{
    background-color: yellow;
 }
