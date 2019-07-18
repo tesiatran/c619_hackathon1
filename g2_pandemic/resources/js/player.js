@@ -1,6 +1,6 @@
 class Player {
   constructor(color, playerClass){
-    this.cards = [];
+    this.hand = [];
     this.location = "Atlanta";
     this.color = color;
     this.playerClass = playerClass;
@@ -29,5 +29,5 @@ class Player {
     } else {
       console.log("You do not have the card");
     }
-  }
+
 }
