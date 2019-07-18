@@ -257,3 +257,18 @@ top: 10%;
 .yellow{
    background-color: yellow;
 }
+.playerOne{
+   display: inline-block;
+   float: left;
+   background-color: chartreuse;
+   height: 20px;
+   width: 49%;
+   border-top-left-radius: 5px;
+}
+.playerTwo{
+   display: inline-block;
+   background-color: rebeccapurple;
+   height: 20px;
+   width: 49%;
+   border-top-right-radius: 5px;
+}
