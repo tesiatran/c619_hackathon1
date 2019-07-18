@@ -5,7 +5,7 @@ class Player {
     this.location = "Atlanta";
     this.color = color;
     this.playerClass = playerClass;
-    $(playerClass).hide();
+    $('.playerOne').addClass('noViz')
     this.renderMove();
   }
   receiveCards(inputCards){
@@ -14,7 +14,7 @@ class Player {
     }
   }
   move(targetLocation){
-    $('#' + this.location + " "+this.playerClass).hide();
+    $('#' + this.location + " "+this.playerClass).addClass('noViz');
     this.location = targetLocation;
     this.renderMove();
   }
@@ -25,7 +25,7 @@ class Player {
 
 
   renderMove(){
-    $('#' + this.location + " " + this.playerClass).show();
+    $('#' + this.location + " " + this.playerClass).removeClass('noViz');
   }
 
   directFlight(targetLocation){
