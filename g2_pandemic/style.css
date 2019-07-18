@@ -26,6 +26,10 @@ body{
    border: 1px solid;
    display: inline-block;
    position: relative;
+   background-image: url("./resources/images/world-map.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-color: darkslateblue;
 }
 
 .gameStatsContainer{
@@ -119,6 +123,35 @@ body{
    display: inline-block;
    position: relative;
 }
+.city {
+
+
+width: 60px;
+height: 60px;
+position: relative;
+border-radius: 15px;
+}
+.cityTop,
+.cityMiddle,
+.cityBottom {
+height: 20px;
+}
+#Atlanta .city {
+background-color: rgb(51, 186, 150);
+left: 75%;
+}
+#HongKong .city {
+background-color:#ee524f;
+left: 28%;
+top: 50%;
+}
+
+#Johannesburg .city{
+background-color:#e5d138;
+left: 60%;
+top: 10%;
+}
+
 
 #SanFrancisco{
 
