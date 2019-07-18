@@ -59,7 +59,7 @@ body{
 .continentContainer{
    height: 98%;
    width: 32.5%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -107,7 +107,7 @@ body{
 .cityContainer{
    height: 19%;
    width: 99%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -122,7 +122,11 @@ border-radius: 15px;
 .cityBottom {
 height: 20px;
 }
-
+.seattle .city{
+background-color: rgb(51, 186, 150);
+left: 25%;
+top: 50%;
+}
 .atlanta .city {
 background-color: rgb(51, 186, 150);
 left: 75%;
@@ -130,7 +134,11 @@ left: 75%;
 .london .city{
 background-color: rgb(51, 186, 150);
 left: 33%;
-
+}
+.sapporo .city {
+background-color:#ee524f;
+left: 55%;
+top: 30%;
 }
 .hongKong .city {
 background-color:#ee524f;
@@ -140,29 +148,44 @@ top: 50%;
 .sydney .city{
 background-color:#ee524f;
 left: 60%;
-top: 20%;
 }
 
 .johannesburg .city{
-background-color:#e5d138;
-left: 60%;
-top: 10%;
+background-color:#edc525;
+left: 67%;
+}
+.hongKong .cityMiddle {
+background-image: url("./resources/images/beaker.png");
+background-repeat: no-repeat;
+background-size:contain;
+background-position:cover;
+margin-left: 40%;
+
 }
 .santiago .city{
-background-color:#e5d138;
-left: 80%;
-top: 30%;
+background-color:#edc525;
+left: 72%;
 }
-.sydney .infectBlockOne,
-.santiago .infectBlockOne,
-.santiago .infectBlockTwo{
+.saoPaulo .city{
+background-color:#edc525;
+left:9%;
+top: 10%;
+}
+.sapporo .infectBlockOne,
+.london .infectBlockOne,
+.saoPaulo .infectBlockOne,
+.saoPaulo .infectBlockTwo{
 width: 10px;
 height: 10px;
 background-color:white;
 border-width: 1px;
 border-style: solid;
 }
+.cityBottom {
+   color: white;
+   text-align: center;
 
+}
 .possibleMovesContainer{
    height: 98%;
    width: 23.5%;
