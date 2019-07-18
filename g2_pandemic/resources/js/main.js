@@ -40,8 +40,14 @@ var cure = new ActionButton("", "treatDisease", "");
 function initializeApp(){
    playerdeck.shuffle();
 
+
+  var treatDisease = new ActionButton("", "treatDisease", "");
+  treatDisease.addClickHandler(cure);
+
+
    player1hand = playerdeck.dealCards(3);
    player2hand = playerdeck.dealCards(3);
+
 
    player1.receiveCards(player1hand);
    player2.receiveCards(player2hand);
@@ -60,6 +66,15 @@ function initializeApp(){
    citySapporo.addClickHandler();
    citySydney.addClickHandler();
 
+
+  function test() {
+    console.log("This is ", this.id)
+  }
+
+  function cure(){
+    playerOne.cure();
+  }
+
    directFlight.addClickHandler();
    shuttleFlight.addClickHandler();
    cure.addClickHandler();
@@ -74,4 +89,6 @@ function initializeApp(){
       $('#p2card' + (index + 1)).text(p2card);
    }
 
+
 }
+var playerOne = new Player("red", ".playerOne");

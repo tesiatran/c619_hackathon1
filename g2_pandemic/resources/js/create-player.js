@@ -19,6 +19,10 @@ class Player {
     this.renderMove();
   }
 
+  cure(){
+    return $('#'+this.location + " .infectBlockOne").hide();
+  }
+
 
   renderMove(){
     $('#' + this.location + " " + this.playerClass).show();
