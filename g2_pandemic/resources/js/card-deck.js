@@ -1,58 +1,21 @@
 class Card{
    constructor(diseaseColor, cityName){
-      this.diseaseColor = null;
-      this.cityName = null;
+      this.diseaseColor = diseaseColor;
+      this.cityName = cityName;
    }
 
    getDisease(){
-      var diseaseColorArray = ["red", "blue", "yellow"];
-
-      // var randomNum = Math.floor(Math.random() * 2);
-      // this.diseaseColor = diseaseColorArray[randomNum];
-
-      this.getCity();
-
       return this.diseaseColor;
    }
 
    getCity(){
-      var redCities = ["HongKong", "Osaka", "Manila", "HoChiMinhCity", "Sydney"];
-      var blueCities = ["SanFrancisco", "Atlanta", "NewYork", "Madrid", "London"];
-      var yellowCities = ["Bogota", "Santiago", "SaoPaulo", "Lagos", "Johannesburg"];
-
-         if(this.diseaseColor === "red"){
-            for(var cityIndex = 0; cityIndex < redCities.length - 1; cityIndex++){
-               this.cityName = redCities[cityIndex];
-
-               var index = redCities.indexOf[cityIndex];
-               redCities = redCities.splice(index);
-
-            }
-         } else if(this.diseaseColor === "blue"){
-            for(var cityIndex = 0; cityIndex < blueCities.length - 1; cityIndex++){
-               this.cityName = blueCities[cityIndex];
-
-               var index = blueCities.indexOf[cityIndex];
-               blueCities = blueCities.splice(index);
-
-            }
-         } else if(this.diseaseColor === "yellow"){
-            for(var cityIndex = 0; cityIndex < yellowCities.length - 1; cityIndex++){
-               this.cityName = yellowCities[cityIndex];
-
-               var index = yellowCities.indexOf[cityIndex];
-               yellowCities = yellowCities.splice(index);
-
-            }
-
-         }
       return this.cityName;
    }
 }
 
 class Deck{
    constructor(){
-      this.cardDeck = [];
+      this.cardDeck = ["Atlanta", "Seattle", "London", "Santiago", "SaoPaulo", "Johannesburg", "HongKong", "Sapporo", "Sydney", ];
    }
 
    dealCards(cardsToDeal){
