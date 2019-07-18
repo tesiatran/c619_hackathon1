@@ -1,72 +1,90 @@
 class Card{
    constructor(diseaseColor, cityName){
-      this.diseaseColor = diseaseColor;
-      this.cityName = cityName;
+      this.diseaseColor = null;
+      this.cityName = null;
    }
 
    getDisease(){
+      var diseaseColorArray = ["red", "blue", "yellow"];
+
+      // var randomNum = Math.floor(Math.random() * 2);
+      // this.diseaseColor = diseaseColorArray[randomNum];
+
+      this.getCity();
+
       return this.diseaseColor;
    }
 
    getCity(){
+      var redCities = ["HongKong", "Osaka", "Manila", "HoChiMinhCity", "Sydney"];
+      var blueCities = ["SanFrancisco", "Atlanta", "NewYork", "Madrid", "London"];
+      var yellowCities = ["Bogota", "Santiago", "SaoPaulo", "Lagos", "Johannesburg"];
+
+         if(this.diseaseColor === "red"){
+            for(var cityIndex = 0; cityIndex < redCities.length - 1; cityIndex++){
+               this.cityName = redCities[cityIndex];
+
+               var index = redCities.indexOf[cityIndex];
+               redCities = redCities.splice(index);
+
+            }
+         } else if(this.diseaseColor === "blue"){
+            for(var cityIndex = 0; cityIndex < blueCities.length - 1; cityIndex++){
+               this.cityName = blueCities[cityIndex];
+
+               var index = blueCities.indexOf[cityIndex];
+               blueCities = blueCities.splice(index);
+
+            }
+         } else if(this.diseaseColor === "yellow"){
+            for(var cityIndex = 0; cityIndex < yellowCities.length - 1; cityIndex++){
+               this.cityName = yellowCities[cityIndex];
+
+               var index = yellowCities.indexOf[cityIndex];
+               yellowCities = yellowCities.splice(index);
+
+            }
+
+         }
       return this.cityName;
    }
 }
 
 class Deck{
    constructor(){
-      this.cards = [];
+      this.cardDeck = [];
    }
 
    dealCards(cardsToDeal){
       var cardsDealt = [];
 
-      if(cardsToDeal <= this.cards.length){
+      if(cardsToDeal <= this.cardDeck.length){
          for(var dealIndex = 0; dealIndex < cardsToDeal; dealIndex++){
-            cardsDealt.push(this.cards.pop());
+            cardsDealt.push(this.cardDeck.pop());
          }
-      } else if(cardsToDeal > this.cards.length){
-         for(var dealIndex = 0; dealIndex < this.cards.length; dealIndex++){
-            cardsDealt.push(this.cards.pop());
+      } else if(cardsToDeal > this.cardDeck.length){
+         for(var dealIndex = 0; dealIndex < this.cardDeck.length; dealIndex++){
+            cardsDealt.push(this.cardDeck.pop());
          }
       }
       return cardsDealt;
    }
 
-   addCard(){
-      this.cards.push(new Card(diseaseColor, cityName));
-
-      for(var colorIndex = 0; colorIndex < diseaseColorArray.length - 1; colorIndex++){
-         diseaseColor = diseaseColorArray[colorIndex];
-
-         if(colorIndex === 0){
-            for(var cityIndex = 0; cityIndex < redCitiesArray.length - 1; cityIndex++){
-               cityName = redCitiesArray[cityIndex];
-            }
-         } else if(colorIndex === 1){
-            for(var cityIndex = 0; cityIndex < blueCitiesArray.length - 1; cityIndex++){
-               cityName = blueCitiesArray[cityIndex];
-            }
-         } else if(colorIndex === 2){
-            for(var cityIndex = 0; cityIndex < yellowCitiesArray.length - 1; cityIndex++){
-               cityName = yellowCitiesArray[cityIndex];
-            }
-         }
-      }
-
-      return this.cards.length;
+   addCard(cardToAdd){
+      this.cardDeck.push(cardToAdd);
+      return this.cardDeck.length;
    }
 
    getCardCount(){
-      return this.cards.length;
+      return this.cardDeck.length;
    }
 
    shuffle(){
-      for(var oldIndex = this.cards.length - 1; oldIndex > 0; oldIndex--){
-         var randomIndex = Math.floor(Math.random() * this.cards.length);
-         var newIndex = this.cards[oldIndex];
-         this.cards[oldIndex] = this.cards[randomIndex];
-         this.cards[randomIndex] = newIndex;
+      for(var oldIndex = this.cardDeck.length - 1; oldIndex > 0; oldIndex--){
+         var randomIndex = Math.floor(Math.random() * this.cardDeck.length);
+         var newIndex = this.cardDeck[oldIndex];
+         this.cardDeck[oldIndex] = this.cardDeck[randomIndex];
+         this.cardDeck[randomIndex] = newIndex;
       }
    }
 }
