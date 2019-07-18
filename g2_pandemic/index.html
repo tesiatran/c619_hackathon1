@@ -4,10 +4,11 @@
 
       <link rel="stylesheet" href="style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="./resources/js/buildCity.js"></script>
+      <script src="./resources/js/build-city.js"></script>
       <script src="./resources/js/gamestate.js"></script>
+      <script src="./resources/js/player.js"></script>
       <script src="./resources/js/card-deck.js"></script>
-
+     
       <script>
       var game = new GameState();
 
@@ -228,4 +229,8 @@
       </div>
 
    </body>
+   <script>
+   var playerOne = new Player("red", ".playerOne");
+   var playerTwo = new Player("pruple", ".playerTwo");
+   </script>
 </html>
