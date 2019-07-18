@@ -1,6 +1,6 @@
 class Player {
   constructor(color, playerClass){
-    this.cards = [];
+    this.hand = [];
     this.location = "Atlanta";
     this.color = color;
     this.playerClass = playerClass;
@@ -16,5 +16,9 @@ class Player {
 
   renderMove(){
     $('#'+this.location+" "+this.playerClass).show();
+  }
+
+  renderHand(){
+
   }
 }
