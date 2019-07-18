@@ -36,8 +36,10 @@ function initializeApp(){
   var shuttleFlight = new ActionButton("", "shuttleFlight", "");
   shuttleFlight.addClickHandler(test);
 
-  var cure = new ActionButton("", "treatDisease", "");
-  cure.addClickHandler(test);
+  var treatDisease = new ActionButton("", "treatDisease", "");
+  treatDisease.addClickHandler(cure);
+
+
 
    var cityAtlanta = new City("Atlanta", "", "");
    cityAtlanta.addClickHandler();
@@ -65,6 +67,15 @@ function initializeApp(){
 
    var citySydney = new City("Sydney", "", "");
    citySydney.addClickHandler();
+
+
   function test() {
     console.log("This is ", this.id)
+  }
+
+  function cure(){
+    playerOne.cure();
+  }
+
 }
+var playerOne = new Player("red", ".playerOne");

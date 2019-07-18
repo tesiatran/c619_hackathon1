@@ -19,6 +19,10 @@ class Player {
     this.renderMove();
   }
 
+  cure(){
+    return $('#'+this.location + " .infectBlockOne").hide();
+  }
+
 
   renderMove(){
     $('#' + this.location + " " + this.playerClass).show();
@@ -32,8 +36,4 @@ class Player {
       console.log("You do not have the card");
     }
   }
-<<<<<<< HEAD:g2_pandemic/resources/js/create-player.js
-=======
-
->>>>>>> 120edd4abb83db565c4194d503ccedcb5fbe64c5:g2_pandemic/resources/js/player.js
 }

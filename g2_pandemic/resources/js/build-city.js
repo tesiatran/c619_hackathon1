@@ -1,7 +1,8 @@
-class City{
+class City extends Player{
   //Takes in a city name and a continent.
     //Example input: ("New York", "Red" "North America") would create that city's object
   constructor(name, color, container){
+    super("red", ".playerOne");
     this.handleClick = this.handleClick.bind(this);
     this.cityName = name;
     this.diseaseCount = 0;
@@ -51,6 +52,6 @@ class City{
   }
 
   handleClick(){
-    console.log("You have clicked "+this.cityName);
+    playerOne.move(this.cityName);
   }
 }
