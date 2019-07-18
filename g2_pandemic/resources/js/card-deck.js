@@ -14,9 +14,8 @@ class Card{
 }
 
 class Deck{
-   constructor(cardObj){
+   constructor(){
       this.cards = [];
-      this.cardtoPush = cardObj;
    }
 
    dealCards(cardsToDeal){
@@ -36,6 +35,25 @@ class Deck{
 
    addCard(){
       this.cards.push(new Card(diseaseColor, cityName));
+
+      for(var colorIndex = 0; colorIndex < diseaseColorArray.length - 1; colorIndex++){
+         diseaseColor = diseaseColorArray[colorIndex];
+
+         if(colorIndex === 0){
+            for(var cityIndex = 0; cityIndex < redCitiesArray.length - 1; cityIndex++){
+               cityName = redCitiesArray[cityIndex];
+            }
+         } else if(colorIndex === 1){
+            for(var cityIndex = 0; cityIndex < blueCitiesArray.length - 1; cityIndex++){
+               cityName = blueCitiesArray[cityIndex];
+            }
+         } else if(colorIndex === 2){
+            for(var cityIndex = 0; cityIndex < yellowCitiesArray.length - 1; cityIndex++){
+               cityName = yellowCitiesArray[cityIndex];
+            }
+         }
+      }
+
       return this.cards.length;
    }
 
