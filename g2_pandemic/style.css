@@ -64,18 +64,6 @@ body{
    position: relative;
 }
 
-#NorthAmericaEurope{
-
-}
-
-#SouthAmericaAfrica{
-
-}
-
-#AsiaAustralia{
-
-}
-
 .counterContainer{
    height: 98%;
    width: 48%;
@@ -134,96 +122,45 @@ border-radius: 15px;
 .cityBottom {
 height: 20px;
 }
-#Atlanta .city {
-background-color: rgb(51, 132, 186);
+
+.atlanta .city {
+background-color: rgb(51, 186, 150);
 left: 75%;
 }
-#London .city{
-background-color: rgb(51, 132, 186);
+.london .city{
+background-color: rgb(51, 186, 150);
 left: 33%;
 
 }
-#HongKong .city {
+.hongKong .city {
 background-color:#ee524f;
 left: 28%;
 top: 50%;
 }
-#Sydney .city{
+.sydney .city{
 background-color:#ee524f;
 left: 60%;
 top: 20%;
 }
 
-#Johannesburg .city{
+.johannesburg .city{
 background-color:#e5d138;
 left: 60%;
 top: 10%;
 }
-#Santiago .city{
+.santiago .city{
 background-color:#e5d138;
 left: 80%;
 top: 30%;
 }
-
-
-#SanFrancisco{
-
-}
-
-#Atlanta{
-
-}
-
-#NewYork{
-
-}
-
-#Madrid{
-
-}
-
-#London{
-
-}
-
-#Bogota{
-
-}
-
-#Santiago{
-
-}
-
-#SaoPaulo{
-
-}
-
-#Lagos{
-
-}
-
-#Johannesburg{
-
-}
-
-#HongKong{
-
-}
-
-#Osaka{
-
-}
-
-#Manila{
-
-}
-
-#HoChiMinhCity{
-
-}
-
-#Sydney{
-
+.sydney .infectBlockOne,
+.santiago .infectBlockOne,
+.santiago .infectBlockTwo{
+width: 10px;
+height: 10px;
+background-color:white;
+border-width: 1px;
+border-style: solid;
 }
 
 .possibleMovesContainer{
@@ -258,7 +195,7 @@ top: 30%;
    display: inline-block;
    position: absolute;
 }
-.red{
+/* .red{
    background-color: red;
 }
 
@@ -267,7 +204,7 @@ top: 30%;
 }
 .yellow{
    background-color: yellow;
-}
+} */
 .playerOne{
    display: inline-block;
    float: left;
