@@ -1,4 +1,4 @@
-class BuildCity{
+class City{
   //Takes in a city name and a continent.
     //Example input: ("New York", "Red" "North America") would create that city's object
   constructor(name, color, container){
