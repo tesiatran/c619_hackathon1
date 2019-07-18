@@ -8,9 +8,9 @@ class ActionButton {
     this.handleClick = this.handleClick.bind(this);
     this.addClickHandler= this.addClickHandler.bind(this);
   }
-  addClickHandler() {
-    console.log('addClickHadler', $('#' + this.domId));
-    $('#' + this.domId).on('click', this.handleClick);// if called outside bind
+  addClickHandler(functionToAdd) {
+    console.log('addClickHandler', $('#' + this.domId));
+    $('#' + this.domId).on('click', functionToAdd);// if called outside bind
   }
   render(height, width){
     console.log('action render');
