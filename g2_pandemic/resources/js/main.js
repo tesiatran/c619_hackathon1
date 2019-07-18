@@ -38,7 +38,6 @@ var shuttleFlight = new ActionButton("", "shuttleFlight", "");
 var cure = new ActionButton("", "treatDisease", "");
 
 // var outbreakCounter = 4;
-
 // $("cure").click(function(){
 //    count--;
 //    $(".outbreak").text("The current count is: "+count);
@@ -84,6 +83,7 @@ function initializeApp(){
       p2card = player2hand[index];
       $('#p2card' + (index + 1)).text(p2card);
    }
+
 }
 
 var playerOne = new Player("red", ".playerOne");

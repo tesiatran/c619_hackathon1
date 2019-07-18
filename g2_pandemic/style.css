@@ -267,6 +267,7 @@ border-style: solid;
    height: 20px;
    width: 50%;
    border-top-right-radius: 15px;
+   visibility: hidden;
 }
 
 .playerThree{
@@ -285,4 +286,8 @@ border-width: 5px;
 border-radius: 15px;
 color:silver;
 background-color: rgb(43, 32, 121);
+}
+
+.noViz{
+   visibility: hidden;
 }
