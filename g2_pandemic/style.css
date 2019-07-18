@@ -2,7 +2,7 @@ body{
    height: 99vh;
    width: 99vw;
    display: inline-block;
-   background-color: darkslateblue;
+   background-color: rgb(72, 57, 165);
 }
 
 .mainGameContainer{
@@ -17,6 +17,7 @@ body{
 .allPlayersContainer{
    height: 69%;
    width: 20%;
+   margin-left: 10px;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
@@ -32,7 +33,7 @@ body{
    background-image: url("./resources/images/world-map.png");
    background-repeat: no-repeat;
    background-size:cover;
-   background-color: darkslateblue;
+   background-color:  rgb(72, 57, 165);
 }
 
 .gameStatsContainer{
@@ -42,7 +43,22 @@ body{
    display: inline-block;
    position: relative;
 }
+.outbreak {
+   height: 100%;
+   width: 30%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+   border-radius: 15px;
+   border-style: solid;
+   border-width: 5px;
+   color: silver;
+   background-color: rgb(43, 32, 121);
+   margin-left: 10px;
+}
+.win {
 
+}
 .actionsContainer{
    height: 90%;
    width: 68%;
@@ -242,6 +258,7 @@ border-style: solid;
    margin-left: 10%;
    text-align: center;
    font-size: 150%;
+   border-radius: 15px;
 }
 /* .red{
    background-color: red;
@@ -286,6 +303,7 @@ border-width: 5px;
 border-radius: 15px;
 color:silver;
 background-color: rgb(43, 32, 121);
+margin-left: 80px
 }
 
 .noViz{
