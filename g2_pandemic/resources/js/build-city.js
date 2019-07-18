@@ -31,20 +31,20 @@ class BuildCity{
     console.log("Disease spreads through "+this.cityName+"! It now has "+this.diseaseCount+" "+this.diseaseType+" points!")
   }
 
-  render(height, width){
-    var cityDiv = $('<div>');
-    cityDiv.addClass("city");
-    cityDiv.addClass(this.diseaseType);
-    cityDiv.attr('id', this.cityName);
-    var style = {
-      'background-color': this.actionColor,
-      'height': height,
-      'width': width
-    };
-    cityDiv.css(style);
-    cityDiv.appendTo('#'+this.containerId);
-    this.addClickHandler();
-  }
+  // render(height, width){
+  //   var cityDiv = $('<div>');
+  //   cityDiv.addClass("city");
+  //   cityDiv.addClass(this.diseaseType);
+  //   cityDiv.attr('id', this.cityName);
+  //   var style = {
+  //     'background-color': this.actionColor,
+  //     'height': height,
+  //     'width': width
+  //   };
+  //   cityDiv.css(style);
+  //   cityDiv.appendTo('#'+this.containerId);
+  //   this.addClickHandler();
+  // }
 
   addClickHandler(){
     $('#'+this.cityName).on('click',  this.handleClick);
