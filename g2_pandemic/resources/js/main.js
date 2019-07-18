@@ -37,20 +37,22 @@ var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
 var cure = new ActionButton("", "treatDisease", "");
 
+// var outbreakCounter = 4;
+// $("cure").click(function(){
+//    count--;
+//    $(".outbreak").text("The current count is: "+count);
+// })
+
+// var cureCounter = null;
+
 function initializeApp(){
    playerdeck.shuffle();
-  var treatDisease = new ActionButton("", "treatDisease", "");
-  treatDisease.addClickHandler(cure);
 
-
-
-  var treatDisease = new ActionButton("", "treatDisease", "");
-  treatDisease.addClickHandler(cure);
-
+   var treatDisease = new ActionButton("", "treatDisease", "");
+   treatDisease.addClickHandler(cure);
 
    player1hand = playerdeck.dealCards(3);
    player2hand = playerdeck.dealCards(3);
-
 
    player1.receiveCards(player1hand);
    player2.receiveCards(player2hand);
@@ -83,4 +85,5 @@ function initializeApp(){
    }
 
 }
+
 var playerOne = new Player("red", ".playerOne");
