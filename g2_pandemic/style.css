@@ -2,6 +2,7 @@ body{
    height: 99vh;
    width: 99vw;
    display: inline-block;
+   background-color: darkslateblue;
 }
 
 .mainGameContainer{
@@ -10,14 +11,16 @@ body{
    border: 1px solid;
    display: inline-block;
    position: relative;
+   /* background-color: darkslateblue; */
 }
 
 .allPlayersContainer{
    height: 69%;
    width: 30%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
+   /* background-color: darkslateblue; */
 }
 
 .mapContainer{
@@ -51,7 +54,7 @@ body{
 .playerContainer{
    height: 48%;
    width: 98%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -83,25 +86,44 @@ body{
 .citiesActionsContainer{
    height: 98%;
    width: 49%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
 
-.playerNameContainer{
-   height: 24%;
-   width: 98%;
-   border: 1px solid;
+.playerOneNameContainer {
+   margin: 3%;
+   height: 9%;
+   width: 29%;
+   border: 5px solid;
+   color: silver;
    display: inline-block;
    position: relative;
+   border-radius: 15px;
+   background-color: chartreuse;
+}
+.playerTwoNameContainer{
+   margin: 3%;
+   height: 11%;
+   width: 30%;
+   border: 5px solid;
+   color: silver;
+   display: inline-block;
+   position: relative;
+   border-radius: 15px;
+   background-color: purple;
 }
 
 .playerHandContainer{
-   height: 75%;
-   width: 98%;
+   height: 70%;
+   width: 95%;
    border: 1px solid;
    display: inline-block;
    position: relative;
+   border-radius: 15px;
+   border-style: solid;
+   border-width: 5px;
+   color: silver;
 }
 
 .cityContainer{
@@ -184,7 +206,6 @@ border-style: solid;
 .cityBottom {
    color: white;
    text-align: center;
-
 }
 .possibleMovesContainer{
    height: 98%;
@@ -233,17 +254,29 @@ border-style: solid;
    float: left;
    background-color: chartreuse;
    height: 20px;
-   width: 49%;
-   border-top-left-radius: 5px;
+   width: 50%;
+   border-top-left-radius: 15px;
 }
 .playerTwo{
    display: inline-block;
    background-color: rebeccapurple;
    height: 20px;
-   width: 49%;
-   border-top-right-radius: 5px;
+   width: 50%;
+   border-top-right-radius: 15px;
 }
 
 .playerThree{
 
+}
+
+#directFlight{
+   background-color: red;
+}
+
+#shuttleFlight{
+   background-color: blue;
+}
+
+#treatDisease{
+   background-color: chartreuse;
 }

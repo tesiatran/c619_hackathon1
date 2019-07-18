@@ -4,14 +4,17 @@ class GameState{
     this.currentEvent = event;
     this.citiesList = {
       blue: ["Seattle", "Atlanta","London"],
-      yellow: ["Bogota", "Santiago", "Lagos","SaoPaulo", "Johannesburg"],
-      red: ["HongKong", "Osaka", "Manila", "HoChiMinhCity", "Sydney"]};
+      yellow: ["Santiago","SaoPaulo", "Johannesburg"],
+      red: ["HongKong", "Osaka", "Sapporo","Sydney"]};
     this.cityObjects = [];
     this.players = 2;
   }
-  addClickHandler() {
-    $('#' + this.cityName).on('click', this.handleClick);
-  }
+  // addClickHandler() {
+  //   for (var i = 0; i < 3; i++){
+  //     for ()
+  //     $('#' + this.cityName).on('click', this.handleClick);
+  //   }
+  // }
 
   createPlayers(){
     this.playerOne = new Player("red");

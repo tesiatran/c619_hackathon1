@@ -30,6 +30,15 @@ function initializeApp(){
    console.log(player1hand);
    console.log(player2hand);
 
+  var directFlight = new ActionButton("", "directFlight", "");
+  directFlight.addClickHandler(test);
+
+  var shuttleFlight = new ActionButton("", "shuttleFlight", "");
+  shuttleFlight.addClickHandler(test);
+
+  var cure = new ActionButton("", "treatDisease", "");
+  cure.addClickHandler(test);
+
    var cityAtlanta = new City("Atlanta", "", "");
    cityAtlanta.addClickHandler();
 
@@ -56,4 +65,6 @@ function initializeApp(){
 
    var citySydney = new City("Sydney", "", "");
    citySydney.addClickHandler();
+  function test() {
+    console.log("This is ", this.id)
 }
