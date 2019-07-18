@@ -247,3 +247,15 @@ border-style: solid;
 .playerThree{
 
 }
+
+#directFlight{
+   background-color: red;
+}
+
+#shuttleFlight{
+   background-color: blue;
+}
+
+#treatDisease{
+   background-color: chartreuse;
+}
