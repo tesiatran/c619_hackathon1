@@ -1,8 +1,8 @@
 class ActionButton {
-  constructor(color, actionName, containerName) {
+  constructor(color, idName, containerName) {
     this.actionColor= color
-    this.domId = actionName;
-    this.domClass = actionName
+    this.domId = idName;
+    this.domClass = idName
     this.containerId = containerName;
     this.targetElement = null;
     this.handleClick = this.handleClick.bind(this);
@@ -28,9 +28,9 @@ class ActionButton {
     this.addClickHandler();
   }
 
-  addClickHandler(){
-    $('#' + this.domId).on('click', this.handleClick);
-  }
+  // addClickHandler(){
+  //   $('#' + this.domId).on('click', this.handleClick);
+  // }
 
   handleClick(){
     console.log("You have clicked " + this.domId);

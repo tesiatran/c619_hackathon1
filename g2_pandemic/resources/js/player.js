@@ -1,5 +1,6 @@
 class Player {
   constructor(color, playerClass){
+    this.turnActive = null;
     this.cards = [];
     this.location = "Atlanta";
     this.color = color;
@@ -17,6 +18,7 @@ class Player {
     this.location = targetLocation;
     this.renderMove();
   }
+
 
   renderMove(){
     $('#'+this.location+" "+this.playerClass).show();
