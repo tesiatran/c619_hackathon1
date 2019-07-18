@@ -1,7 +1,11 @@
 class Player {
   constructor(color, playerClass){
+<<<<<<< HEAD
     this.turnActive = null;
     this.cards = [];
+=======
+    this.hand = [];
+>>>>>>> e8f1dcd7f2b3a549129f414ce566e11bac920f4d
     this.location = "Atlanta";
     this.color = color;
     this.playerClass = playerClass;
@@ -31,5 +35,5 @@ class Player {
     } else {
       console.log("You do not have the card");
     }
-  }
+
 }
