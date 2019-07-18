@@ -309,3 +309,10 @@ margin-left: 80px
 .noViz{
    visibility: hidden;
 }
+.win{
+   display: inline-block;
+   vertical-align: top;
+   background-color: hotpink;
+   height: 100%;
+   width: 50%;
+}
