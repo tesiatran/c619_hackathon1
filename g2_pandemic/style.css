@@ -8,26 +8,21 @@ body{
 .mainGameContainer{
    height: 98.5%;
    width: 98.5%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
-   /* background-color: darkslateblue; */
 }
 
 .allPlayersContainer{
    height: 69%;
    width: 20%;
    margin-left: 10px;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
-   /* background-color: darkslateblue; */
 }
 
 .mapContainer{
    height: 79%;
    width: 79%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
    background-image: url("./resources/images/world-map.png");
@@ -39,7 +34,6 @@ body{
 .gameStatsContainer{
    height: 90%;
    width: 30%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -64,7 +58,6 @@ body{
 .actionsContainer{
    height: 90%;
    width: 68%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -72,7 +65,6 @@ body{
 .playerContainer{
    height: 48%;
    width: 98%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -80,7 +72,6 @@ body{
 .continentContainer{
    height: 98%;
    width: 32.5%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -95,14 +86,12 @@ body{
 .bottomDisplayContainer{
    height: 15%;
    width: 95%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
 .playerActionsContainer{
    height: 98%;
    width: 48%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -110,7 +99,6 @@ body{
 .citiesActionsContainer{
    height: 98%;
    width: 49%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -262,16 +250,6 @@ border-style: solid;
    font-size: 150%;
    border-radius: 15px;
 }
-/* .red{
-   background-color: red;
-}
-
-.blue{
-   background-color: blue;
-}
-.yellow{
-   background-color: yellow;
-} */
 .playerOne{
    display: inline-block;
    float: left;

@@ -9,11 +9,9 @@ class ActionButton {
     this.addClickHandler= this.addClickHandler.bind(this);
   }
   addClickHandler(functionToAdd) {
-    console.log('addClickHandler', $('#' + this.domId));
-    $('#' + this.domId).on('click', functionToAdd);// if called outside bind
+    $('#' + this.domId).on('click', functionToAdd);
   }
   render(height, width){
-    console.log('action render');
     var actionDiv = $('<div>');
     actionDiv.addClass("action");
     actionDiv.addClass(this.domClass);
@@ -29,6 +27,5 @@ class ActionButton {
   }
 
   handleClick(){
-    console.log("You have clicked " + this.domId);
   }
 }

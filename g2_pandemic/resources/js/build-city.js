@@ -11,16 +11,7 @@ class City extends Player{
     this.containerId = container;
     this.playerCount = 0;
   }
-  //Displays stats of city
-  cityStatus(){
-    console.log(this.cityName+ ' has '+this.diseaseCount+ ' number of '+this.diseaseType+' points');
-    if (this.researchStation){
-      console.log("There is a research station in this city");
-    } else {
-      console.log("There is no research station in this city");
-    }
-    console.log("There are "+this.playerCount+" player(s) in this city");
-  }
+
 
   buildResearch(){
     this.researchStation = true;
@@ -31,21 +22,6 @@ class City extends Player{
     this.diseaseCount++;
     console.log("Disease spreads through "+this.cityName+"! It now has "+this.diseaseCount+" "+this.diseaseType+" points!")
   }
-
-  // render(height, width){
-  //   var cityDiv = $('<div>');
-  //   cityDiv.addClass("city");
-  //   cityDiv.addClass(this.diseaseType);
-  //   cityDiv.attr('id', this.cityName);
-  //   var style = {
-  //     'background-color': this.actionColor,
-  //     'height': height,
-  //     'width': width
-  //   };
-  //   cityDiv.css(style);
-  //   cityDiv.appendTo('#'+this.containerId);
-  //   this.addClickHandler();
-  // }
 
   addClickHandler(){
     $('#'+this.cityName).on('click',  this.handleClick);

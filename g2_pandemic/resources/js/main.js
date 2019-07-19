@@ -1,11 +1,6 @@
 
 $(document).ready(initializeApp)
 
-// var diseaseColorArray = ["blue", "red", "yellow"];
-
-// var blueCities = ["Atlanta", "Seattle", "London"];
-// var redCities = ["HongKong", "Sapporo", "Sydney"];
-// var yellowCities = ["Santiago", "SaoPaulo", "Johannesburg"];
 
 var cityClicked = null;
 var directFlightClicked = null;

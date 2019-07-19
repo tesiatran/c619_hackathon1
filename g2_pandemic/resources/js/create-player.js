@@ -41,8 +41,6 @@ class Player {
     if (this.cards.includes(targetLocation)){
         this.move(targetLocation);
         this.cards.splice(this.cards.indexOf(targetLocation), 1);
-    } else {
-      console.log("You do not have the card");
     }
   }
 }
