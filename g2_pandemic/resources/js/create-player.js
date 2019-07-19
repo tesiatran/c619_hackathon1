@@ -3,7 +3,7 @@ class Player {
     this.turnActive = null;
     this.cards = [];
     this.location = "Atlanta";
-    this.infectedCities = ["Seattle", "London", "Sapporo", "SaoPaulo"];
+    this.infectedCities = ["Seattle", "SaoPaulo", "Sapporo", "London"]
     this.color = color;
     this.playerClass = playerClass;
     $('.playerOne').addClass('noViz')
