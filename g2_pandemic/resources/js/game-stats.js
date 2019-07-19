@@ -13,16 +13,6 @@ class GameStats{
     return this.outbreakCount;
   }
 
-  incrementOutbreak(){
-    this.outbreakCount++;
-    console.log("An outbreak has occured, the total number of outbreaks is now "+this.outbreakCount);
-  }
-
-  decrementOutbreak(){
-    this.outbreakCount--;
-    console.log("The total number of outbreaks is now "+this.outbreakCount);
-  }
-
   getCured(){
     return this.cureFound;
   }

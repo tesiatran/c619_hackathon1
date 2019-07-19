@@ -10,16 +10,6 @@ class City extends Player{
     this.playerCount = 0;
   }
 
-  cityStatus(){
-    console.log(this.cityName+ ' has '+this.diseaseCount+ ' number of '+this.diseaseType+' points');
-    if (this.researchStation){
-      console.log("There is a research station in this city");
-    } else {
-      console.log("There is no research station in this city");
-    }
-    console.log("There are "+this.playerCount+" player(s) in this city");
-  }
-
   buildResearch(){
     this.researchStation = true;
     console.log("You have built a research station!");

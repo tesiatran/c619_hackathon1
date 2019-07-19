@@ -9,21 +9,3 @@ class GameState{
     this.cityObjects = [];
     this.players = 2;
   }
-
-  createPlayers(){
-    this.playerOne = new Player("red");
-    this.playerTwo = new Player("purple");
-  }
-
-  startGame(){
-
-  }
-
-  endPlayerTurn(){
-
-  }
-
-  endGameTurn(){
-
-  }
-}
