@@ -21,6 +21,7 @@ class Player {
   }
 
   cure(){
+    outbreakCounter--;
     return $('#'+this.location + " .infectBlockOne").hide();
   }
 

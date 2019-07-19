@@ -37,11 +37,7 @@ var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
 var cure = new ActionButton("", "treatDisease", "");
 
-// var outbreakCounter = 4;
-// $("cure").click(function(){
-//    count--;
-//    $(".outbreak").text("The current count is: "+count);
-// })
+var outbreakCounter = (4);
 
 // var cureCounter = null;
 
@@ -84,6 +80,7 @@ function initializeApp(){
       $('#p2card' + (index + 1)).text(p2card);
    }
 
+   $("#outbreak").text("OUTBREAK count: " + outbreakCounter);
 }
 
 var playerOne = new Player("red", ".playerOne");

@@ -39,13 +39,13 @@ body{
 .gameStatsContainer{
    height: 90%;
    width: 30%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
 .outbreak {
    height: 100%;
-   width: 30%;
+   width: 40%;
    border: 1px solid;
    display: inline-block;
    position: relative;
@@ -53,8 +53,12 @@ body{
    border-style: solid;
    border-width: 5px;
    color: silver;
+   background-color:  rgb(28, 23, 23);
+   margin-left: 60px;
    background-color: rgb(43, 32, 121);
    margin-left: 10px;
+   text-align: center;
+   font-size: 110%;
 }
 .win {
 
@@ -62,7 +66,7 @@ body{
 .actionsContainer{
    height: 90%;
    width: 68%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -93,14 +97,14 @@ body{
 .bottomDisplayContainer{
    height: 15%;
    width: 95%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
 .playerActionsContainer{
    height: 98%;
    width: 48%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -302,10 +306,32 @@ position: relative;
 border-width: 5px;
 border-radius: 15px;
 color:silver;
-background-color: rgb(43, 32, 121);
+background-color: rgb(28, 23, 23);
 margin-left: 80px
+}
+.directFlight{
+   background-image: url("./resources/images/directFlight.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+}
+.shuttleFlight{
+   background-image: url("./resources/images/ShuttleFlight2.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+}
+.treatDisease{
+   background-image: url("./resources/images/medic.png");
+   background-repeat: no-repeat;
+   background-size:cover;
 }
 
 .noViz{
    visibility: hidden;
+}
+.win{
+   display: inline-block;
+   vertical-align: top;
+   background-color: hotpink;
+   height: 100%;
+   width: 50%;
 }
