@@ -8,9 +8,11 @@ class GameStats{
     };
     this.turnCount = null;
   }
+
   getOutbreaks(){
     return this.outbreakCount;
   }
+
   incrementOutbreak(){
     this.outbreakCount++;
     console.log("An outbreak has occured, the total number of outbreaks is now "+this.outbreakCount);
@@ -31,8 +33,8 @@ class GameStats{
 
   getTurnCount(){
     return this.turnCount;
-
   }
+
   addTurn(){
     this.turnCount++;
   }

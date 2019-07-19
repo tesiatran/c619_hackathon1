@@ -1,12 +1,6 @@
 
 $(document).ready(initializeApp)
 
-// var diseaseColorArray = ["blue", "red", "yellow"];
-
-// var blueCities = ["Atlanta", "Seattle", "London"];
-// var redCities = ["HongKong", "Sapporo", "Sydney"];
-// var yellowCities = ["Santiago", "SaoPaulo", "Johannesburg"];
-
 var cityClicked = null;
 var directFlightClicked = null;
 var shuttleFlightClicked = null;
@@ -39,8 +33,6 @@ var cure = new ActionButton("", "treatDisease", "");
 
 var outbreakCounter = (4);
 
-// var cureCounter = null;
-
 function initializeApp(){
    playerdeck.shuffle();
 
@@ -63,9 +55,9 @@ function initializeApp(){
    citySapporo.addClickHandler();
    citySydney.addClickHandler();
 
-  function cure(){
-    playerOne.cure();
-  }
+   function cure(){
+      playerOne.cure();
+   }
 
    directFlight.addClickHandler();
    shuttleFlight.addClickHandler();
@@ -80,7 +72,6 @@ function initializeApp(){
       $('#p2card' + (index + 1)).text(p2card);
    }
 
-   $("#outbreak").text("OUTBREAKS" + outbreakCounter);
 }
 
 var playerOne = new Player("red", ".playerOne");

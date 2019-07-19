@@ -9,39 +9,20 @@ class GameState{
     this.cityObjects = [];
     this.players = 2;
   }
-  // addClickHandler() {
-  //   for (var i = 0; i < 3; i++){
-  //     for ()
-  //     $('#' + this.cityName).on('click', this.handleClick);
-  //   }
-  // }
 
   createPlayers(){
     this.playerOne = new Player("red");
     this.playerTwo = new Player("purple");
   }
 
-  // createCities(color){
-  //   for ( var count = 0; count < this.citiesList[color].length; count++){
-  //     this.cityObjects.push(new BuildCity(this.citiesList[color][count], color, this.citiesList[color][count]));
-  //   }
-  // }
-
-  // renderAllCities(){
-  //   for (var count = 0; count < this.cityObjects.length; count++){
-  //     this.cityObjects[count].render("100px", "100px");
-  //   }
-  // }
-  //Calls functions to set up game
   startGame(){
-    //Deal out cards to players
-    //Infect cities
+
   }
-  //Calls functions to be called after a player ends their turn
+
   endPlayerTurn(){
 
   }
-  //Calls functions to be called after all player ends their turns
+
   endGameTurn(){
 
   }
