@@ -1,0 +1,313 @@
+body{
+   height: 99vh;
+   width: 99vw;
+   display: inline-block;
+   background-color: rgb(72, 57, 165);
+}
+
+.mainGameContainer{
+   height: 98.5%;
+   width: 98.5%;
+   display: inline-block;
+   position: relative;
+}
+
+.allPlayersContainer{
+   height: 69%;
+   width: 20%;
+   margin-left: 10px;
+   display: inline-block;
+   position: relative;
+}
+
+.mapContainer{
+   height: 79%;
+   width: 79%;
+   display: inline-block;
+   position: relative;
+   background-image: url("./resources/images/world-map.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-color:  rgb(72, 57, 165);
+}
+
+.gameStatsContainer{
+   height: 90%;
+   width: 30%;
+   display: inline-block;
+   position: relative;
+}
+.outbreak {
+   height: 100%;
+   width: 40%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+   border-radius: 15px;
+   border-style: solid;
+   border-width: 5px;
+   color: silver;
+   background-color:  rgb(28, 23, 23);
+   margin-left: 60px;
+   text-align: center;
+   font-size: 110%;
+}
+.win {
+
+}
+.actionsContainer{
+   height: 90%;
+   width: 68%;
+   display: inline-block;
+   position: relative;
+}
+
+.playerContainer{
+   height: 48%;
+   width: 98%;
+   display: inline-block;
+   position: relative;
+}
+
+.continentContainer{
+   height: 98%;
+   width: 32.5%;
+   display: inline-block;
+   position: relative;
+}
+
+.counterContainer{
+   height: 98%;
+   width: 48%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+}
+.bottomDisplayContainer{
+   height: 15%;
+   width: 95%;
+   display: inline-block;
+   position: relative;
+}
+.playerActionsContainer{
+   height: 98%;
+   width: 48%;
+   display: inline-block;
+   position: relative;
+}
+
+.citiesActionsContainer{
+   height: 98%;
+   width: 49%;
+   display: inline-block;
+   position: relative;
+}
+
+.playerOneNameContainer {
+   margin: 3%;
+   height: 9%;
+   width: 29%;
+   border: 5px solid;
+   color: silver;
+   display: inline-block;
+   position: relative;
+   border-radius: 15px;
+   background-color: chartreuse;
+}
+.playerTwoNameContainer{
+   margin: 3%;
+   height: 11%;
+   width: 30%;
+   border: 5px solid;
+   color: silver;
+   display: inline-block;
+   position: relative;
+   border-radius: 15px;
+   background-color: rebeccapurple;
+}
+
+.playerHandContainer{
+   height: 70%;
+   width: 95%;
+   border: 1px solid;
+   display: inline-block;
+   position: relative;
+   border-radius: 15px;
+   border-style: solid;
+   border-width: 5px;
+   color: silver;
+   background-color: rgb(43, 32, 121);
+}
+
+.cityContainer{
+   height: 19%;
+   width: 99%;
+   /* border: 1px solid; */
+   display: inline-block;
+   position: relative;
+}
+.city {
+width: 60px;
+height: 60px;
+position: relative;
+border-radius: 15px;
+}
+.cityTop,
+.cityMiddle,
+.cityBottom {
+height: 20px;
+}
+.seattle .city{
+background-color: rgb(51, 186, 150);
+left: 25%;
+top: 50%;
+}
+.atlanta .city {
+background-color: rgb(51, 186, 150);
+left: 75%;
+}
+.london .city{
+background-color: rgb(51, 186, 150);
+left: 33%;
+}
+.sapporo .city {
+background-color:#ee524f;
+left: 55%;
+top: 30%;
+}
+.hongKong .city {
+background-color:#ee524f;
+left: 28%;
+top: 50%;
+}
+.sydney .city{
+background-color:#ee524f;
+left: 60%;
+}
+
+.johannesburg .city{
+background-color:#edc525;
+left: 67%;
+}
+.hongKong .cityMiddle {
+background-image: url("./resources/images/beaker.png");
+background-repeat: no-repeat;
+background-size:contain;
+background-position:cover;
+margin-left: 40%;
+
+}
+.santiago .city{
+background-color:#edc525;
+left: 72%;
+}
+.saoPaulo .city{
+background-color:#edc525;
+left:9%;
+top: 10%;
+}
+.sapporo .infectBlockOne,
+.london .infectBlockOne,
+.saoPaulo .infectBlockOne,
+.seattle .infectBlockOne{
+width: 10px;
+height: 10px;
+background-color:white;
+border-width: 1px;
+border-style: solid;
+}
+.cityBottom {
+   color: white;
+   text-align: center;
+}
+
+.infectCitiesContainer{
+   height: 80%;
+   width: 60%;
+   border: 1px solid;
+   display: inline-block;
+   position: absolute;
+   margin: 5%;
+}
+
+.chosenCitiesContainer{
+   height: 20%;
+   width: 20%;
+   border: 1px solid;
+   display: inline-block;
+   position: absolute;
+}
+
+.playerICContainer{
+   height: 20%;
+   width: 80%;
+   border: 1px solid;
+   display: block;
+   position: relative;
+   margin-top: 3.5%;
+   margin-left: 10%;
+   text-align: center;
+   font-size: 150%;
+   border-radius: 15px;
+}
+.playerOne{
+   display: inline-block;
+   float: left;
+   background-color: chartreuse;
+   height: 20px;
+   width: 50%;
+   border-top-left-radius: 15px;
+}
+.playerTwo{
+   display: inline-block;
+   background-color: rebeccapurple;
+   height: 20px;
+   width: 50%;
+   border-top-right-radius: 15px;
+   visibility: hidden;
+}
+
+.playerThree{
+
+}
+
+.directFlight,
+.shuttleFlight,
+.treatDisease{
+height: 70%;
+width: 10%;
+border:solid;
+display: inline-block;
+position: relative;
+border-width: 5px;
+border-radius: 15px;
+color:silver;
+background-color: rgb(28, 23, 23);
+margin-left: 80px
+}
+.directFlight{
+   background-image: url("./resources/images/directFlight.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+}
+.shuttleFlight{
+   background-image: url("./resources/images/ShuttleFlight2.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+}
+.treatDisease{
+   background-image: url("./resources/images/medic.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+.noViz{
+   visibility: hidden;
+}
+.win{
+   display: inline-block;
+   vertical-align: top;
+   background-color: hotpink;
+   height: 100%;
+   width: 50%;
+}

@@ -1,1 +1,270 @@
+<!DOCTYPE html>
+<html>
+   <head>
 
+      <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="./resources/js/action-button.js"></script>
+      <script src="./resources/js/create-player.js"></script>
+      <script src="./resources/js/build-city.js"></script>
+      <script src="./resources/js/game-stats.js"></script>
+      <script src="./resources/js/game-state.js"></script>
+      <script src="./resources/js/card-deck.js"></script>
+      <script src="./resources/js/main.js"></script>
+
+      <script>
+
+
+
+      </script>
+
+   </head>
+   <body>
+
+      <div class="mainGameContainer">
+
+         <div class="allPlayersContainer">
+
+            <div class="playerContainer player_1">
+
+               <div class="playerOneNameContainer"></div>
+               <div class="playerHandContainer">
+
+                  <div class="playerICContainer player_1" id="p1card1"></div>
+                  <div class="playerICContainer player_1" id="p1card2"></div>
+                  <div class="playerICContainer player_1" id="p1card3"></div>
+
+               </div>
+
+            </div>
+
+            <div class="playerContainer">
+
+               <div class="playerTwoNameContainer"></div>
+               <div class="playerHandContainer">
+
+                  <div class="playerICContainer" id="p2card1"></div>
+                  <div class="playerICContainer" id="p2card2"></div>
+                  <div class="playerICContainer" id="p2card3"></div>
+
+               </div>
+
+            </div>
+
+         </div>
+
+
+         <div class="mapContainer">
+            <div class="continentContainer" id="leftContinent">
+               <div class="cityContainer" id="FairBanks"></div>
+               <div class="cityContainer seattle" id="Seattle">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='infectBlockOne'></div>
+                           <div class='infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='infectBlockThree'></div>
+                           <div class='infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>SEA</div>
+                  </div>
+               </div>
+               <div class="cityContainer atlanta" id="Atlanta">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='infectBlockOne'></div>
+                           <div class='infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='infectBlockThree'></div>
+                           <div class='infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>ATL</div>
+                  </div>
+               </div>
+               <div class="cityContainer lima" id="Lima"></div>
+               <div class="cityContainer santiago" id="Santiago">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='infectBlockOne'></div>
+                           <div class='infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='infectBlockThree'></div>
+                           <div class='infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>SAN</div>
+                  </div>
+               </div>
+            </div>
+            <div class="continentContainer" id="centerContinent">
+               <div class="cityContainer norway" id="Norway"></div>
+               <div class="cityContainer london" id="London">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='london infectBlockOne'></div>
+                           <div class='london infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='london infectBlockThree'></div>
+                           <div class='london infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>LON</div>
+                  </div>
+               </div>
+               <div class="cityContainer" id="Lagos"></div>
+               <div class="cityContainer saoPaulo" id="SaoPaulo">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='SaoPaulo infectBlockOne'></div>
+                           <div class='SaoPaulo infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='infectBlockThree'></div>
+                           <div class='infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>SAO</div>
+                  </div>
+               </div>
+               <div class="cityContainer johannesburg" id="Johannesburg">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='johannesburg infectBlockOne'></div>
+                           <div class='johannesburg infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='infectBlockThree'></div>
+                           <div class='infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>JOH</div>
+                  </div>
+               </div>
+            </div>
+            <div class="continentContainer" id="rightContinent">
+               <div class="cityContainer" id="HoChiMinhCity"></div>
+               <div class="cityContainer sapporo" id="Sapporo">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='infectBlockOne'></div>
+                           <div class='infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='infectBlockThree'></div>
+                           <div class='infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>SAP</div>
+                  </div>
+               </div>
+               <div class="cityContainer hongKong" id="HongKong">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='infectBlockOne'></div>
+                           <div class='infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='infectBlockThree'></div>
+                           <div class='infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>HKG</div>
+                  </div>
+               </div>
+               <div class="cityContainer" id="Manila"></div>
+               <div class="cityContainer sydney" id="Sydney">
+                  <div class='city'>
+                     <div class='cityTop'>
+                        <div class='playerOne noViz'></div>
+                        <div class='playerTwo'></div>
+                     </div>
+                     <div class='cityMiddle'>
+                        <div class='left'>
+                           <div class='sydney infectBlockOne'></div>
+                           <div class='sydney infectBlockTwo'></div>
+                        </div>
+                        <div class='center'></div>
+                        <div class='right'>
+                           <div class='sydney infectBlockThree'></div>
+                           <div class='sydney infectBlockFour'></div>
+                        </div>
+                     </div>
+                     <div class='cityBottom'>SYD</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="bottomDisplayContainer">
+            <div class="gameStatsContainer">
+
+               <div class="outbreak" id="outbreak"></div>
+               <div class="win noViz" id="win"><h4>You've Won!</h4></div>
+
+            </div>
+
+
+            <div class="actionsContainer">
+               <div class="directFlight" id="directFlight"></div>
+               <div class="shuttleFlight" id="shuttleFlight"></div>
+               <div class="treatDisease" id="treatDisease"></div>
+            </div>
+
+         </div>
+      </div>
+   </body>
+</html>
