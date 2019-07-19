@@ -55,6 +55,8 @@ body{
    color: silver;
    background-color: rgb(43, 32, 121);
    margin-left: 10px;
+   text-align: center;
+   font-size: 110%;
 }
 .win {
 
@@ -219,7 +221,7 @@ top: 10%;
 .sapporo .infectBlockOne,
 .london .infectBlockOne,
 .saoPaulo .infectBlockOne,
-.seattle .infectBlockTwo{
+.seattle .infectBlockOne{
 width: 10px;
 height: 10px;
 background-color:white;
