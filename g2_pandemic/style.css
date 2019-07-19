@@ -55,6 +55,10 @@ body{
    color: silver;
    background-color:  rgb(28, 23, 23);
    margin-left: 60px;
+   background-color: rgb(43, 32, 121);
+   margin-left: 10px;
+   text-align: center;
+   font-size: 110%;
 }
 .win {
 
@@ -323,4 +327,11 @@ margin-left: 80px
 
 .noViz{
    visibility: hidden;
+}
+.win{
+   display: inline-block;
+   vertical-align: top;
+   background-color: hotpink;
+   height: 100%;
+   width: 50%;
 }
