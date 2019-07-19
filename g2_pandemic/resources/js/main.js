@@ -80,7 +80,7 @@ function initializeApp(){
       $('#p2card' + (index + 1)).text(p2card);
    }
 
-   $("#outbreak").text("OUTBREAK count: " + outbreakCounter);
+   $("#outbreak").text("OUTBREAKS" + outbreakCounter);
 }
 
 var playerOne = new Player("red", ".playerOne");
