@@ -1,6 +1,4 @@
 class City extends Player{
-  //Takes in a city name and a continent.
-    //Example input: ("New York", "Red" "North America") would create that city's object
   constructor(name, color, container){
     super("red", ".playerOne");
     this.handleClick = this.handleClick.bind(this);
@@ -11,7 +9,6 @@ class City extends Player{
     this.containerId = container;
     this.playerCount = 0;
   }
-
 
   buildResearch(){
     this.researchStation = true;

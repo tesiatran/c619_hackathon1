@@ -8,11 +8,10 @@ class GameStats{
     };
     this.turnCount = null;
   }
+
   getOutbreaks(){
     return this.outbreakCount;
   }
-
-
 
   getCured(){
     return this.cureFound;
@@ -24,8 +23,8 @@ class GameStats{
 
   getTurnCount(){
     return this.turnCount;
-
   }
+
   addTurn(){
     this.turnCount++;
   }

@@ -9,11 +9,13 @@ class Player {
     $('.playerOne').addClass('noViz')
     this.renderMove();
   }
+
   receiveCards(inputCards){
     for (var i = 0; i < inputCards.length; i++){
       this.cards.push(inputCards[i]);
     }
   }
+
   move(targetLocation){
     $('#' + this.location + " "+this.playerClass).addClass('noViz');
     this.location = targetLocation;
@@ -23,7 +25,7 @@ class Player {
   cure(){
     if (this.infectedCities.includes(this.location)){
       outbreakCounter--;
-      $("#outbreak").text("OUTBREAK count: " + outbreakCounter);
+      $("#outbreak").text("OUTBREAKS " + outbreakCounter);
       this.infectedCities.splice(this.infectedCities.indexOf(this.location), 1);
       if (outbreakCounter == 0){
         $('.win').removeClass('noViz');
@@ -31,7 +33,6 @@ class Player {
     }
     return $('#'+this.location + " .infectBlockOne").hide();
   }
-
 
   renderMove(){
     $('#' + this.location + " " + this.playerClass).removeClass('noViz');

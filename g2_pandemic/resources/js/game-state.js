@@ -9,4 +9,3 @@ class GameState{
     this.cityObjects = [];
     this.players = 2;
   }
-}
