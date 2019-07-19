@@ -21,7 +21,14 @@ class Player {
   }
 
   cure(){
-    outbreakCounter--;
+    if (this.infectedCities.includes(this.location)){
+      outbreakCounter--;
+      $("#outbreak").text("OUTBREAK count: " + outbreakCounter);
+      this.infectedCities.splice(this.infectedCities.indexOf(this.location), 1);
+      if (outbreakCounter == 0){
+        $('.win').removeClass('noViz');
+      }
+    }
     return $('#'+this.location + " .infectBlockOne").hide();
   }
 
