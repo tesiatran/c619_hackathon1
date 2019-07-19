@@ -11,7 +11,6 @@ body{
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
-   /* background-color: darkslateblue; */
 }
 
 .allPlayersContainer{
@@ -21,7 +20,6 @@ body{
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
-   /* background-color: darkslateblue; */
 }
 
 .mapContainer{
@@ -159,74 +157,74 @@ body{
    position: relative;
 }
 .city {
-width: 60px;
-height: 60px;
-position: relative;
-border-radius: 15px;
+   width: 60px;
+   height: 60px;
+   position: relative;
+   border-radius: 15px;
 }
 .cityTop,
 .cityMiddle,
 .cityBottom {
-height: 20px;
+   height: 20px;
 }
 .seattle .city{
-background-color: rgb(51, 186, 150);
-left: 25%;
-top: 50%;
+   background-color: rgb(51, 186, 150);
+   left: 25%;
+   top: 50%;
 }
 .atlanta .city {
-background-color: rgb(51, 186, 150);
-left: 75%;
+   background-color: rgb(51, 186, 150);
+   left: 75%;
 }
 .london .city{
-background-color: rgb(51, 186, 150);
-left: 33%;
+   background-color: rgb(51, 186, 150);
+   left: 33%;
 }
 .sapporo .city {
-background-color:#ee524f;
-left: 55%;
-top: 30%;
+   background-color:#ee524f;
+   left: 55%;
+   top: 30%;
 }
 .hongKong .city {
-background-color:#ee524f;
-left: 28%;
-top: 50%;
+   background-color:#ee524f;
+   left: 28%;
+   top: 50%;
 }
 .sydney .city{
-background-color:#ee524f;
-left: 60%;
+   background-color:#ee524f;
+   left: 60%;
 }
 
 .johannesburg .city{
-background-color:#edc525;
-left: 67%;
+   background-color:#edc525;
+   left: 67%;
 }
 .hongKong .cityMiddle {
-background-image: url("./resources/images/beaker.png");
-background-repeat: no-repeat;
-background-size:contain;
-background-position:cover;
-margin-left: 40%;
+   background-image: url("./resources/images/beaker.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-position:cover;
+   margin-left: 40%;
 
 }
 .santiago .city{
-background-color:#edc525;
-left: 72%;
+   background-color:#edc525;
+   left: 72%;
 }
 .saoPaulo .city{
-background-color:#edc525;
-left:9%;
-top: 10%;
+   background-color:#edc525;
+   left:9%;
+   top: 10%;
 }
 .sapporo .infectBlockOne,
 .london .infectBlockOne,
 .saoPaulo .infectBlockOne,
 .seattle .infectBlockOne{
-width: 10px;
-height: 10px;
-background-color:white;
-border-width: 1px;
-border-style: solid;
+   width: 10px;
+   height: 10px;
+   background-color:white;
+   border-width: 1px;
+   border-style: solid;
 }
 .cityBottom {
    color: white;
@@ -262,16 +260,7 @@ border-style: solid;
    font-size: 150%;
    border-radius: 15px;
 }
-/* .red{
-   background-color: red;
-}
 
-.blue{
-   background-color: blue;
-}
-.yellow{
-   background-color: yellow;
-} */
 .playerOne{
    display: inline-block;
    float: left;
@@ -289,23 +278,19 @@ border-style: solid;
    visibility: hidden;
 }
 
-.playerThree{
-
-}
-
 .directFlight,
 .shuttleFlight,
 .treatDisease{
-height: 70%;
-width: 10%;
-border:solid;
-display: inline-block;
-position: relative;
-border-width: 5px;
-border-radius: 15px;
-color:silver;
-background-color: rgb(28, 23, 23);
-margin-left: 80px
+   height: 70%;
+   width: 10%;
+   border:solid;
+   display: inline-block;
+   position: relative;
+   border-width: 5px;
+   border-radius: 15px;
+   color:silver;
+   background-color: rgb(28, 23, 23);
+   margin-left: 80px
 }
 .directFlight{
    background-image: url("./resources/images/directFlight.png");
