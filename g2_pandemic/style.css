@@ -1,20 +1,20 @@
 body{
-   height: 99vh;
-   width: 99vw;
+   height: 93vh;
+   width: 98vw;
    display: inline-block;
-   background-color: rgb(72, 57, 165);
+   background-color:#141c43;
 }
 
 .mainGameContainer{
-   height: 98.5%;
-   width: 98.5%;
+   height: 95%;
+   width: 95%;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
 
 .allPlayersContainer{
-   height: 69%;
+   height: 65%;
    width: 20%;
    margin-left: 10px;
    /* border: 1px solid; */
@@ -23,14 +23,15 @@ body{
 }
 
 .mapContainer{
-   height: 70%;
-   width: 70%;
+   height: 75%;
+   width: 75%;
+   margin-left: 50px;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
    background-image: url("./resources/images/world-map.png");
    background-repeat: no-repeat;
-   background-size:cover;
+   background-size:contain;
    /* background-color:  rgb(72, 57, 165); */
 }
 
@@ -42,22 +43,15 @@ body{
    position: relative;
 }
 .outbreak {
-   height: 100%;
-   width: 40%;
-   border: 1px solid;
+   height: 70%;
+   width: 95%;
+   border: solid;
    display: inline-block;
    position: relative;
-   border-radius: 15px;
+   border-radius: 5px;
    border-style: solid;
-   border-width: 5px;
-   color: silver;
-   background-color:  rgb(28, 23, 23);
-   margin-left: 60px;
-   text-align: center;
-   font-size: 110%;
-}
-.win {
-
+   border-width: 1px;
+   color: white;
 }
 .actionsContainer{
    height: 90%;
@@ -112,41 +106,37 @@ body{
    display: inline-block;
    position: relative;
 }
-
-.playerOneNameContainer {
+.playerOneNameContainer,
+.playerTwoNameContainer{
    margin: 3%;
-   height: 9%;
-   width: 29%;
-   border: 5px solid;
-   color: silver;
+   height: 12%;
+   width: 10%;
+   border: 1px solid;
+   color: white;
    display: inline-block;
    position: relative;
    border-radius: 15px;
+}
+.playerOneNameContainer{
    background-color:rebeccapurple;
 }
 .playerTwoNameContainer{
-   margin: 3%;
-   height: 11%;
-   width: 30%;
-   border: 5px solid;
-   color: silver;
-   display: inline-block;
-   position: relative;
-   border-radius: 15px;
-   background-color:rgba(255, 140, 0, 0.755);
+   background-color:rgb(233, 102, 1);
 }
-
 .playerHandContainer{
    height: 70%;
    width: 95%;
-   border: 1px solid;
+   border: solid;
    display: inline-block;
    position: relative;
-   border-radius: 15px;
+   border-radius: 5px;
    border-style: solid;
-   border-width: 5px;
-   color: silver;
-   background-color: rgb(43, 32, 121);
+   border-width: 1px;
+   color: white;
+   background-color: rgb(15, 15, 15);
+   background-image: url("./resources/images/motion.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
 }
 
 .cityContainer{
@@ -168,30 +158,30 @@ body{
    height: 20px;
 }
 .seattle .city{
-   background-color: rgb(51, 186, 150);
+   background-color: #179cfa;
    left: 25%;
    top: 50%;
 }
 .atlanta .city {
-   background-color: rgb(51, 186, 150);
+   background-color: #179cfa;
    left: 75%;
 }
 .london .city{
-   background-color: rgb(51, 186, 150);
+   background-color: #179cfa;
    left: 33%;
 }
 .sapporo .city {
-   background-color:#ee524f;
+   background-color:#fa3552;
    left: 55%;
    top: 30%;
 }
 .hongKong .city {
-   background-color:#ee524f;
+   background-color:#fa3552;
    left: 28%;
    top: 50%;
 }
 .sydney .city{
-   background-color:#ee524f;
+   background-color:#fa3552;
    left: 60%;
 }
 
@@ -267,7 +257,7 @@ body{
 .playerICContainer{
    height: 20%;
    width: 80%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: block;
    position: relative;
    margin-top: 3.5%;
@@ -275,6 +265,7 @@ body{
    text-align: center;
    font-size: 150%;
    border-radius: 15px;
+   color: white;
 }
 
 .playerOne{
@@ -337,7 +328,7 @@ body{
 .win{
    display: inline-block;
    vertical-align: top;
-   background-color:rgb(28, 23, 23);
+   background-color: rgb(6, 6, 6);
    height: 130px;
    width: 130px;
    margin: 50px;
