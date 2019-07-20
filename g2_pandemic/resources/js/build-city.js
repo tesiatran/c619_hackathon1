@@ -7,6 +7,7 @@ class City extends Player{
     this.cityName = name;
     this.diseaseCount = 0;
     this.diseaseType = color;
+    this.diseaseCured = null;
     this.researchStation = null;
     this.containerId = container;
     this.playerCount = 0;
@@ -28,6 +29,9 @@ class City extends Player{
   }
 
   addDisease(){
+    if (this.diseaseCured === true){
+      return;
+    }
     this.diseaseCount++;
     console.log("Disease spreads through "+this.cityName+"! It now has "+this.diseaseCount+" "+this.diseaseType+" points!")
   }
