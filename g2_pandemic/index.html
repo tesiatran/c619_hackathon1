@@ -31,6 +31,7 @@
                   <div class="playerICContainer" id="p2card3"></div>
                </div>
             </div>
+            <div class="outbreak" id="outbreak"></div>
          </div>
          <div class="mapContainer">
             <div class="continentContainer" id="leftContinent">
@@ -46,7 +47,7 @@
                            <div class='Seattle infectBlock1 noViz'></div>
                            <div class='Seattle infectBlock2 noViz'></div>
                         </div>
-                        <div class='Seattle center'></div>
+                        <div class='center researchSeattle noViz'></div>
                         <div class='right'>
                            <div class='Seattle infectBlock3 noViz'></div>
                            <div class='Seattle infectBlock4 noViz'></div>
@@ -66,7 +67,7 @@
                            <div class='Atlanta infectBlock1 noViz'></div>
                            <div class='Atlanta infectBlock2 noViz'></div>
                         </div>
-                        <div class='Atlanta center'></div>
+                        <div class='center researchAtlanta noViz'></div>
                         <div class='right'>
                            <div class='Atlanta infectBlock3 noViz'></div>
                            <div class='Atlanta infectBlock4 noViz'></div>
@@ -87,7 +88,7 @@
                            <div class='Santiago infectBlock1 noViz'></div>
                            <div class='Santiago infectBlock2 noViz'></div>
                         </div>
-                        <div class='Santiago center'></div>
+                        <div class='researchSantiago center noViz'></div>
                         <div class='right'>
                            <div class='Santiago infectBlock3 noViz'></div>
                            <div class='Santiago infectBlock4 noViz'></div>
@@ -110,7 +111,7 @@
                            <div class='london infectBlock1 noViz'></div>
                            <div class='london infectBlock2 noViz'></div>
                         </div>
-                        <div class='London center'></div>
+                        <div class='researchLondon center noViz'></div>
                         <div class='right'>
                            <div class='london infectBlock3 noViz'></div>
                            <div class='london infectBlock4 noViz'></div>
@@ -131,7 +132,7 @@
                            <div class='SaoPaulo infectBlock1 noViz'></div>
                            <div class='SaoPaulo infectBlock2 noViz'></div>
                         </div>
-                        <div class='SaoPaulo center'></div>
+                        <div class='researchSaoPaulo center noViz'></div>
                         <div class='right'>
                            <div class='SaoPaulo infectBlock3 noViz'></div>
                            <div class='SaoPaulo infectBlock4 noViz'></div>
@@ -148,13 +149,13 @@
                      </div>
                      <div class='cityMiddle'>
                         <div class='left'>
-                           <div class='johannesburg infectBlock1 noViz'></div>
-                           <div class='johannesburg infectBlock2 noViz'></div>
+                           <div class='Johannesburg infectBlock1 noViz'></div>
+                           <div class='Johannesburg infectBlock2 noViz'></div>
                         </div>
-                        <div class='johannesburg center'></div>
+                        <div class='researchJohannesburg noViz center'></div>
                         <div class='right'>
-                           <div class='johannesburg infectBlock3 noViz'></div>
-                           <div class='johannesburg infectBlock4 noViz'></div>
+                           <div class='Johannesburg infectBlock3 noViz'></div>
+                           <div class='Johannesburg infectBlock4 noViz'></div>
                         </div>
                      </div>
                      <div class='cityBottom'>JOH</div>
@@ -174,7 +175,7 @@
                            <div class='Sapporo infectBlock1 noViz'></div>
                            <div class='Sapporo infectBlock2 noViz'></div>
                         </div>
-                        <div class='Sapporo center'></div>
+                        <div class='researchSapporo center noViz'></div>
                         <div class='right'>
                            <div class='Sapporo infectBlock3 noViz'></div>
                            <div class='Sapporo infectBlock4 noViz'></div>
@@ -194,7 +195,7 @@
                            <div class='HongKong infectBlock1 noViz'></div>
                            <div class='HongKong infectBlock2 noViz'></div>
                         </div>
-                        <div class='HongKong center'></div>
+                        <div class='researchHongKong center noViz'></div>
                         <div class='right'>
                            <div class='HongKong infectBlock3 noViz'></div>
                            <div class='HongKong infectBlock4 noViz'></div>
@@ -210,12 +211,12 @@
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
                      </div>
-                     <div class='Sydyney cityMiddle noViz'>
+                     <div class='Sydyney cityMiddle'>
                         <div class='left'>
                            <div class='Sydney infectBlock1 noViz'></div>
                            <div class='Sydney infectBlock2 noViz'></div>
                         </div>
-                        <div class='Sydney center noViz'></div>
+                        <div class='researchSydney center noViz'></div>
                         <div class='right'>
                            <div class='Sydney infectBlock3 noViz'></div>
                            <div class='Sydney infectBlock4 noViz'></div>
@@ -227,13 +228,11 @@
             </div>
          </div>
          <div class="bottomDisplayContainer">
-            <div class="gameStatsContainer">
-            <div class="outbreak" id="outbreak"></div>
+            <div class="win noViz" id="win">
+               <h3>CONTAINED!</h3>
             </div>
-            <div class="actionsContainer">
                <div class="treatDisease" id="treatDisease"></div>
-               <div class="win noViz" id="win"><h3>CONTAINED!</h3></div>
-            </div>
+               <div class="panic"></div>
          </div>
       </div>
    </body>

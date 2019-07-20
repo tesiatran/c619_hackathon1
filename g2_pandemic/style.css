@@ -1,8 +1,12 @@
 body{
-   height: 93vh;
-   width: 98vw;
+   height: 88vh;
+   width: 95vw;
    display: inline-block;
    background-color:#141c43;
+   /* border-radius: 5px;
+   border-style: solid;
+   border-width: 1px;
+   color: white; */
 }
 
 .mainGameContainer{
@@ -23,9 +27,10 @@ body{
 }
 
 .mapContainer{
-   height: 75%;
-   width: 75%;
+   height: 73%;
+   width: 73%;
    margin-left: 50px;
+   color: white;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
@@ -35,24 +40,6 @@ body{
    /* background-color:  rgb(72, 57, 165); */
 }
 
-.gameStatsContainer{
-   height: 90%;
-   width: 30%;
-   /* border: 1px solid; */
-   display: inline-block;
-   position: relative;
-}
-.outbreak {
-   height: 70%;
-   width: 95%;
-   border: solid;
-   display: inline-block;
-   position: relative;
-   border-radius: 5px;
-   border-style: solid;
-   border-width: 1px;
-   color: white;
-}
 .actionsContainer{
    height: 90%;
    width: 68%;
@@ -86,7 +73,7 @@ body{
 }
 .bottomDisplayContainer{
    height: 15%;
-   width: 95%;
+   width: 100%;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
@@ -108,7 +95,7 @@ body{
 }
 .playerOneNameContainer,
 .playerTwoNameContainer{
-   margin: 3%;
+   margin: 7%;
    height: 12%;
    width: 10%;
    border: 1px solid;
@@ -137,8 +124,24 @@ body{
    background-image: url("./resources/images/motion.jpg");
    background-repeat: no-repeat;
    background-size:cover;
+   margin-left: 7%;
 }
-
+.outbreak {
+   height: 33%;
+   width: 93%;
+   margin-top: 20%;
+   border: solid;
+   display: inline-block;
+   position: relative;
+   border-radius: 5px;
+   border-style: solid;
+   border-width: 1px;
+   color: white;
+   background-image: url("./resources/images/terminal.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+   margin-left: 7%;
+}
 .cityContainer{
    height: 19%;
    width: 99%;
@@ -291,53 +294,61 @@ body{
    visibility: hidden;
 }
 
-.directFlight,
-.shuttleFlight,
+
 .treatDisease{
    height: 70%;
    width: 10%;
    border:solid;
    display: inline-block;
    position: relative;
-   border-width: 5px;
-   border-radius: 15px;
-   color:silver;
-   background-color: rgb(28, 23, 23);
-   margin-left: 80px;
-   top: 50px;
+   border: 1px solid white;
+   border-radius: 5px;
+   background-color: rgb(6, 6, 6);
+   top: 15%;
 }
-.directFlight{
-   background-image: url("./resources/images/directFlight.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-}
-.shuttleFlight{
-   background-image: url("./resources/images/ShuttleFlight2.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-}
+
 .treatDisease{
    background-image: url("./resources/images/medic.png");
    background-repeat: no-repeat;
    background-size:cover;
+   position: absolute;
+   height: 130px;
+   width: 130px;
+   left: 50%;
 }
 
-/* .noViz{
+/* .noViz {
    visibility: hidden;
 } */
-.win{
+.win {
    display: inline-block;
    vertical-align: top;
    background-color: rgb(6, 6, 6);
-   height: 130px;
+   position: relative;
+   color:white;
+   height:130px;
    width: 130px;
-   margin: 50px;
    background-image: url("./resources/images/biohazard.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+   left:28%;
+   top: 15%;
+   text-align: center;
+   border:solid;
+   display: inline-block;
+   position: relative;
+   border: 1px solid white;
+   border-radius: 5px;
+}
+.panic{
+   display: inline-block;
+   vertical-align: top;
+   left: 75%;
+   height: 175px;
+   width: 249px;
+   background-image: url("./resources/images/panic.gif");
    background-repeat: no-repeat;
    background-size:cover;
    position: relative;
-   top: 50%;
-   color:white;
-   text-align: center;
-   top: 10%;
+   background-color: white;
 }
