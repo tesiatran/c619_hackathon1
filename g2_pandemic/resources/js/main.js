@@ -12,6 +12,7 @@ var directFlightClicked = null;
 var shuttleFlightClicked = null;
 var treatDiseaseClicked = null;
 
+
 var player1 = new Player();
 var player2 = new Player();
 
@@ -36,6 +37,8 @@ var citySydney = new City("Sydney", "", "");
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
 var cure = new ActionButton("", "treatDisease", "");
+
+var game = new GameStats();
 
 var outbreakCounter = (4);
 
