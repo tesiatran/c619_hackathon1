@@ -199,15 +199,6 @@ body{
    background-color:#edc525;
    left: 67%;
 }
-.hongKong .cityMiddle {
-   background-image: url("./resources/images/beaker.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-   background-position:cover;
-   margin-left: 40%;
-   display: absolute;
-
-}
 .santiago .city{
    background-color:#edc525;
    left: 72%;
@@ -217,36 +208,45 @@ body{
    left:9%;
    top: 10%;
 }
-.infectBlockOne,
-.infectBlockTwo,
-.infectBlockThree,
-.infectBlockFour {
-   width: 10px;
-   height: 10px;
+.left,
+.center,
+.right {
+   height: 18px;
+   width: 31%;
+   display: inline-block;
+}
+.center {
+   background-image: url("./resources/images/beaker.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-position:contain;
+   margin-top: 2px;
+}
+.infectBlock1,
+.infectBlock2,
+.infectBlock3,
+.infectBlock4 {
+   width: 8px;
+   height: 8px;
    background-color: rgb(6, 245, 54);
    border-width: 2px;
    border-style: solid;
    border-radius: 5px;
    color:rgb(28, 23, 23);
    display: inline-block;
-   position: relative;
+   position: absolute;
 }
-.infectBlockThree,
-.infectBlockFour{
-   left:100%;
+
+.infectBlock2,
+.infectBlock4{
+   left: 47px;
 }
 
 .cityBottom {
    color: white;
    text-align: center;
 }
-.cityMiddle {
-   background-image: url("./resources/images/beaker.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-   background-position:cover;
 
-}
 .infectCitiesContainer{
    height: 80%;
    width: 60%;
@@ -331,9 +331,9 @@ body{
    background-size:cover;
 }
 
-.noViz{
+/* .noViz{
    visibility: hidden;
-}
+} */
 .win{
    display: inline-block;
    vertical-align: top;
