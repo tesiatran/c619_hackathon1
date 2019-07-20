@@ -1,20 +1,24 @@
 body{
-   height: 99vh;
-   width: 99vw;
+   height: 88vh;
+   width: 95vw;
    display: inline-block;
-   background-color: rgb(72, 57, 165);
+   background-color:#141c43;
+   /* border-radius: 5px;
+   border-style: solid;
+   border-width: 1px;
+   color: white; */
 }
 
 .mainGameContainer{
-   height: 98.5%;
-   width: 98.5%;
+   height: 95%;
+   width: 95%;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
 
 .allPlayersContainer{
-   height: 69%;
+   height: 65%;
    width: 20%;
    margin-left: 10px;
    /* border: 1px solid; */
@@ -23,42 +27,19 @@ body{
 }
 
 .mapContainer{
-   height: 79%;
-   width: 79%;
+   height: 73%;
+   width: 73%;
+   margin-left: 50px;
+   color: white;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
    background-image: url("./resources/images/world-map.png");
    background-repeat: no-repeat;
-   background-size:cover;
-   background-color:  rgb(72, 57, 165);
+   background-size:contain;
+   /* background-color:  rgb(72, 57, 165); */
 }
 
-.gameStatsContainer{
-   height: 90%;
-   width: 30%;
-   /* border: 1px solid; */
-   display: inline-block;
-   position: relative;
-}
-.outbreak {
-   height: 100%;
-   width: 40%;
-   border: 1px solid;
-   display: inline-block;
-   position: relative;
-   border-radius: 15px;
-   border-style: solid;
-   border-width: 5px;
-   color: silver;
-   background-color:  rgb(28, 23, 23);
-   margin-left: 60px;
-   text-align: center;
-   font-size: 110%;
-}
-.win {
-
-}
 .actionsContainer{
    height: 90%;
    width: 68%;
@@ -92,7 +73,7 @@ body{
 }
 .bottomDisplayContainer{
    height: 15%;
-   width: 95%;
+   width: 100%;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
@@ -112,43 +93,55 @@ body{
    display: inline-block;
    position: relative;
 }
-
-.playerOneNameContainer {
-   margin: 3%;
-   height: 9%;
-   width: 29%;
-   border: 5px solid;
-   color: silver;
+.playerOneNameContainer,
+.playerTwoNameContainer{
+   margin: 7%;
+   height: 12%;
+   width: 10%;
+   border: 1px solid;
+   color: white;
    display: inline-block;
    position: relative;
    border-radius: 15px;
-   background-color: chartreuse;
+}
+.playerOneNameContainer{
+   background-color:rebeccapurple;
 }
 .playerTwoNameContainer{
-   margin: 3%;
-   height: 11%;
-   width: 30%;
-   border: 5px solid;
-   color: silver;
-   display: inline-block;
-   position: relative;
-   border-radius: 15px;
-   background-color: rebeccapurple;
+   background-color:rgb(233, 102, 1);
 }
-
 .playerHandContainer{
    height: 70%;
    width: 95%;
-   border: 1px solid;
+   border: solid;
    display: inline-block;
    position: relative;
-   border-radius: 15px;
+   border-radius: 5px;
    border-style: solid;
-   border-width: 5px;
-   color: silver;
-   background-color: rgb(43, 32, 121);
+   border-width: 1px;
+   color: white;
+   background-color: rgb(15, 15, 15);
+   background-image: url("./resources/images/motion.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   margin-left: 7%;
 }
-
+.outbreak {
+   height: 33%;
+   width: 93%;
+   margin-top: 20%;
+   border: solid;
+   display: inline-block;
+   position: relative;
+   border-radius: 5px;
+   border-style: solid;
+   border-width: 1px;
+   color: white;
+   background-image: url("./resources/images/terminal.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+   margin-left: 7%;
+}
 .cityContainer{
    height: 19%;
    width: 99%;
@@ -168,44 +161,36 @@ body{
    height: 20px;
 }
 .seattle .city{
-   background-color: rgb(51, 186, 150);
+   background-color: #179cfa;
    left: 25%;
    top: 50%;
 }
 .atlanta .city {
-   background-color: rgb(51, 186, 150);
+   background-color: #179cfa;
    left: 75%;
 }
 .london .city{
-   background-color: rgb(51, 186, 150);
+   background-color: #179cfa;
    left: 33%;
 }
 .sapporo .city {
-   background-color:#ee524f;
+   background-color:#fa3552;
    left: 55%;
    top: 30%;
 }
 .hongKong .city {
-   background-color:#ee524f;
+   background-color:#fa3552;
    left: 28%;
    top: 50%;
 }
 .sydney .city{
-   background-color:#ee524f;
+   background-color:#fa3552;
    left: 60%;
 }
 
 .johannesburg .city{
    background-color:#edc525;
    left: 67%;
-}
-.hongKong .cityMiddle {
-   background-image: url("./resources/images/beaker.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-   background-position:cover;
-   margin-left: 40%;
-
 }
 .santiago .city{
    background-color:#edc525;
@@ -216,16 +201,40 @@ body{
    left:9%;
    top: 10%;
 }
-.sapporo .infectBlockOne,
-.london .infectBlockOne,
-.saoPaulo .infectBlockOne,
-.seattle .infectBlockOne{
-   width: 10px;
-   height: 10px;
-   background-color:white;
-   border-width: 1px;
-   border-style: solid;
+.left,
+.center,
+.right {
+   height: 18px;
+   width: 31%;
+   display: inline-block;
 }
+.center {
+   background-image: url("./resources/images/beaker.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-position:contain;
+   margin-top: 2px;
+}
+.infectBlock1,
+.infectBlock2,
+.infectBlock3,
+.infectBlock4 {
+   width: 8px;
+   height: 8px;
+   background-color: rgb(6, 245, 54);
+   border-width: 2px;
+   border-style: solid;
+   border-radius: 5px;
+   color:rgb(28, 23, 23);
+   display: inline-block;
+   position: absolute;
+}
+
+.infectBlock2,
+.infectBlock4{
+   left: 47px;
+}
+
 .cityBottom {
    color: white;
    text-align: center;
@@ -251,7 +260,7 @@ body{
 .playerICContainer{
    height: 20%;
    width: 80%;
-   border: 1px solid;
+   /* border: 1px solid; */
    display: block;
    position: relative;
    margin-top: 3.5%;
@@ -259,62 +268,87 @@ body{
    text-align: center;
    font-size: 150%;
    border-radius: 15px;
+   color: white;
 }
 
 .playerOne{
    display: inline-block;
    float: left;
-   background-color: chartreuse;
-   height: 20px;
-   width: 50%;
+   background-color: rebeccapurple;
+   height: 16px;
+   width: 43%;
    border-top-left-radius: 15px;
+   color: white;
+   border-width: 2px;
+   border-style: solid;
 }
 .playerTwo{
    display: inline-block;
-   background-color: rebeccapurple;
-   height: 20px;
-   width: 50%;
+   background-color: rgba(255, 140, 0, 0.755);
+   height: 16px;
+   width: 44%;
    border-top-right-radius: 15px;
+   color: white;
+   border-width: 2px;
+   border-style: solid;
    visibility: hidden;
 }
 
-.directFlight,
-.shuttleFlight,
+
 .treatDisease{
    height: 70%;
    width: 10%;
    border:solid;
    display: inline-block;
    position: relative;
-   border-width: 5px;
-   border-radius: 15px;
-   color:silver;
-   background-color: rgb(28, 23, 23);
-   margin-left: 80px
+   border: 1px solid white;
+   border-radius: 5px;
+   background-color: rgb(6, 6, 6);
+   top: 15%;
 }
-.directFlight{
-   background-image: url("./resources/images/directFlight.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-}
-.shuttleFlight{
-   background-image: url("./resources/images/ShuttleFlight2.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-}
+
 .treatDisease{
    background-image: url("./resources/images/medic.png");
    background-repeat: no-repeat;
    background-size:cover;
+   position: absolute;
+   height: 130px;
+   width: 130px;
+   left: 50%;
 }
 
-.noViz{
+/* .noViz {
    visibility: hidden;
-}
-.win{
+} */
+.win {
    display: inline-block;
    vertical-align: top;
-   background-color: hotpink;
-   height: 100%;
-   width: 50%;
+   background-color: rgb(6, 6, 6);
+   position: relative;
+   color:white;
+   height:130px;
+   width: 130px;
+   background-image: url("./resources/images/biohazard.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+   left:28%;
+   top: 15%;
+   text-align: center;
+   border:solid;
+   display: inline-block;
+   position: relative;
+   border: 1px solid white;
+   border-radius: 5px;
+}
+.panic{
+   display: inline-block;
+   vertical-align: top;
+   left: 75%;
+   height: 175px;
+   width: 249px;
+   background-image: url("./resources/images/panic.gif");
+   background-repeat: no-repeat;
+   background-size:cover;
+   position: relative;
+   background-color: white;
 }

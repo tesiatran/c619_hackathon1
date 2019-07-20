@@ -1,6 +1,5 @@
 
 $(document).ready(initializeApp)
-
 // var diseaseColorArray = ["blue", "red", "yellow"];
 
 // var blueCities = ["Atlanta", "Seattle", "London"];
