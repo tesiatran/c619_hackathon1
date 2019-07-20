@@ -14,5 +14,8 @@ class CityStatus{
          chosenCity = this.cities[randomIndex];
 
       }
+
+      chosenCity.populateResearch();
+
    }
 }
