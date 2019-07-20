@@ -23,15 +23,15 @@ body{
 }
 
 .mapContainer{
-   height: 79%;
-   width: 79%;
+   height: 70%;
+   width: 70%;
    /* border: 1px solid; */
    display: inline-block;
    position: relative;
    background-image: url("./resources/images/world-map.png");
    background-repeat: no-repeat;
    background-size:cover;
-   background-color:  rgb(72, 57, 165);
+   /* background-color:  rgb(72, 57, 165); */
 }
 
 .gameStatsContainer{
@@ -122,7 +122,7 @@ body{
    display: inline-block;
    position: relative;
    border-radius: 15px;
-   background-color: chartreuse;
+   background-color:rebeccapurple;
 }
 .playerTwoNameContainer{
    margin: 3%;
@@ -133,7 +133,7 @@ body{
    display: inline-block;
    position: relative;
    border-radius: 15px;
-   background-color: rebeccapurple;
+   background-color:rgba(255, 140, 0, 0.755);
 }
 
 .playerHandContainer{
@@ -205,6 +205,7 @@ body{
    background-size:contain;
    background-position:cover;
    margin-left: 40%;
+   display: absolute;
 
 }
 .santiago .city{
@@ -216,21 +217,36 @@ body{
    left:9%;
    top: 10%;
 }
-.sapporo .infectBlockOne,
-.london .infectBlockOne,
-.saoPaulo .infectBlockOne,
-.seattle .infectBlockOne{
+.infectBlockOne,
+.infectBlockTwo,
+.infectBlockThree,
+.infectBlockFour {
    width: 10px;
    height: 10px;
-   background-color:white;
-   border-width: 1px;
+   background-color: rgb(6, 245, 54);
+   border-width: 2px;
    border-style: solid;
+   border-radius: 5px;
+   color:rgb(28, 23, 23);
+   display: inline-block;
+   position: relative;
 }
+.infectBlockThree,
+.infectBlockFour{
+   left:100%;
+}
+
 .cityBottom {
    color: white;
    text-align: center;
 }
+.cityMiddle {
+   background-image: url("./resources/images/beaker.png");
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-position:cover;
 
+}
 .infectCitiesContainer{
    height: 80%;
    width: 60%;
@@ -264,17 +280,23 @@ body{
 .playerOne{
    display: inline-block;
    float: left;
-   background-color: chartreuse;
-   height: 20px;
-   width: 50%;
+   background-color: rebeccapurple;
+   height: 16px;
+   width: 43%;
    border-top-left-radius: 15px;
+   color: white;
+   border-width: 2px;
+   border-style: solid;
 }
 .playerTwo{
    display: inline-block;
-   background-color: rebeccapurple;
-   height: 20px;
-   width: 50%;
+   background-color: rgba(255, 140, 0, 0.755);
+   height: 16px;
+   width: 44%;
    border-top-right-radius: 15px;
+   color: white;
+   border-width: 2px;
+   border-style: solid;
    visibility: hidden;
 }
 
@@ -290,7 +312,8 @@ body{
    border-radius: 15px;
    color:silver;
    background-color: rgb(28, 23, 23);
-   margin-left: 80px
+   margin-left: 80px;
+   top: 50px;
 }
 .directFlight{
    background-image: url("./resources/images/directFlight.png");
@@ -314,7 +337,16 @@ body{
 .win{
    display: inline-block;
    vertical-align: top;
-   background-color: hotpink;
-   height: 100%;
-   width: 50%;
+   background-color:rgb(28, 23, 23);
+   height: 130px;
+   width: 130px;
+   margin: 50px;
+   background-image: url("./resources/images/biohazard.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+   position: relative;
+   top: 50%;
+   color:white;
+   text-align: center;
+   top: 10%;
 }
