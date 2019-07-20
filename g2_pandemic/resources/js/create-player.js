@@ -3,7 +3,7 @@ class Player {
     this.turnActive = null;
     this.cards = [];
     this.location = "Atlanta";
-    this.infectedCities = ["Seattle", "SaoPaulo", "Sapporo", "London"];
+    this.infectedCities = ["Seattle", "SaoPaulo", "Sapporo", "London"]
     this.color = color;
     this.playerClass = playerClass;
     $('.playerOne').addClass('noViz')
@@ -20,16 +20,22 @@ class Player {
     this.renderMove();
   }
 
-  cure(){
+  treat(){
     if (this.infectedCities.includes(this.location)){
       outbreakCounter--;
-      $("#outbreak").text("OUTBREAK count: " + outbreakCounter);
+      $("#outbreak").text("OUTBREAK count: " + game.outbreakCount);
       this.infectedCities.splice(this.infectedCities.indexOf(this.location), 1);
       if (outbreakCounter == 0){
         $('.win').removeClass('noViz');
       }
     }
     return $('#'+this.location + " .infectBlockOne").hide();
+  }
+
+  discoverCure(target){
+    if (player1hand.includes(target)){
+      game.cureCity(target);
+    }
   }
 
 

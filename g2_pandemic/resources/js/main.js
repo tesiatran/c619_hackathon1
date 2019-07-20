@@ -35,9 +35,10 @@ var citySydney = new City("Sydney", "", "");
 
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
-var cure = new ActionButton("", "treatDisease", "");
+var treat = new ActionButton("", "treatDisease", "");
 
 var game = new GameStats();
+$('.playerICContainer.player_1').on('click', game.cureCity(this));
 
 var outbreakCounter = (4);
 
@@ -47,7 +48,7 @@ function initializeApp(){
    playerdeck.shuffle();
 
    var treatDisease = new ActionButton("", "treatDisease", "");
-   treatDisease.addClickHandler(cure);
+   treatDisease.addClickHandler(treat);
 
    player1hand = playerdeck.dealCards(3);
    player2hand = playerdeck.dealCards(3);
@@ -65,8 +66,8 @@ function initializeApp(){
    citySapporo.addClickHandler();
    citySydney.addClickHandler();
 
-  function cure(){
-    playerOne.cure();
+  function treat(){
+    playerOne.treat();
   }
 
    directFlight.addClickHandler();
@@ -83,6 +84,9 @@ function initializeApp(){
    }
 
    $("#outbreak").text("OUTBREAKS" + outbreakCounter);
+   $('.playerHandContainer').on('click', console.log($(this).text()));
+
+
 }
 
 var playerOne = new Player("red", ".playerOne");
