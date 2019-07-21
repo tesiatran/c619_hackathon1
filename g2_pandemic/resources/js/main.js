@@ -39,6 +39,8 @@ var cure = new ActionButton("", "treatDisease", "");
 
 var game = new GameStats();
 
+var researchCenterCity = new ResearchStatus();
+
 var outbreakCounter = (4);
 
 // var cureCounter = null;

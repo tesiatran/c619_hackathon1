@@ -1,8 +1,8 @@
 class GameStats{
   constructor(){
     this.outbreakCount = null;
-    //Recieves list of cured cities.
-    this.uncuredCities = [cityLondon, citySeattle,cityAtlanta,citySaoPaulo,citySantiago,cityJohannesburg,cityHongKong,citySapporo,citySydney];
+    //Receives list of cured cities.
+    this.uncuredCities = [cityLondon, citySeattle, cityAtlanta, citySaoPaulo, citySantiago, cityJohannesburg, cityHongKong, citySapporo, citySydney];
     this.cities = this.uncuredCities;
     this.curedCities = {};
     this.turnCount = null;
@@ -22,8 +22,6 @@ class GameStats{
 
   getCured(){
     return this.curedCities;
-  }
-  addResearchStation(){
   }
 
   cureCity(cityName){
@@ -53,6 +51,7 @@ class GameStats{
   addTurn(){
     this.turnCount++;
   }
+  
   checkOutbreaks(){
     if (outbreakCounter === 0){
       //win

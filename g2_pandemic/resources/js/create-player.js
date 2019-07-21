@@ -9,18 +9,26 @@ class Player {
     $('.playerOne').addClass('noViz')
     this.renderMove();
   }
+
   receiveCards(inputCards){
     for (var i = 0; i < inputCards.length; i++){
       this.cards.push(inputCards[i]);
     }
   }
+
   move(targetLocation){
     $('#' + this.location + " "+this.playerClass).addClass('noViz');
     this.location = targetLocation;
-    this.renderMove();
+    this.renderMove();//call condition for curing or treating disease, and have correct display messages
+
+    if(this.researchStation === true){
+      this.cure();
+    } else{
+      this.treat();
+    }
   }
 
-  cure(){
+  treat(){
     if (this.infectedCities.includes(this.location)){
       outbreakCounter--;
       $("#outbreak").text("OUTBREAK count: " + outbreakCounter);
@@ -32,6 +40,9 @@ class Player {
     return $('#'+this.location + " .infectBlockOne").hide();
   }
 
+  cure(){
+    console.log("cured!");
+  }
 
   renderMove(){
     $('#' + this.location + " " + this.playerClass).removeClass('noViz');
@@ -45,4 +56,5 @@ class Player {
       console.log("You do not have the card");
     }
   }
+  
 }
