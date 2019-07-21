@@ -13,15 +13,15 @@ var treatDiseaseClicked = null;
 
 
 var player1 = new Player();
-var player2 = new Player();
+// var player2 = new Player();
 
-var playerdeck = new Deck();
-var citydeck = new Deck();
+// var player1deck = new Deck();
+// // var citydeck = new Deck();
 
-var player1hand = null;
-var player2hand = null;
+// // var player1hand = null;
+// // var player2hand = null;
 
-var p1card1 = null;
+// var p1card1 = null;
 
 var Atlanta = new City("Atlanta", "", "");
 var Seattle = new City("Seattle", "", "");

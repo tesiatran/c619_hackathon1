@@ -16,6 +16,11 @@ class Player {
     }
   }
 
+  removeCard(){
+    this.cards.pop();
+    console.log('player card array :' + this.cards)
+  }
+
   move(targetLocation){
     $('#' + this.location + " "+this.playerClass).addClass('noViz');
     this.location = targetLocation;
