@@ -4,7 +4,7 @@ class GameStats{
     //Recieves list of cured cities.
     this.uncuredCities = [London,Seattle,Atlanta,SaoPaulo,Santiago,Johannesburg,HongKong,Sapporo,Sydney];
     this.cities = [...this.uncuredCities];
-    this.curedCities = {};
+    this.curedCities = [];
     this.turnCount = null;
   }
   getOutbreaks(){
@@ -29,6 +29,7 @@ class GameStats{
   cureCity(cityName){
     if (this.uncuredCities.includes(cityName) && eval(playerOne.location).researchStation == true){
       this.cities[this.cities.indexOf(cityName)].diseaseCured = true;
+      this.curedCities.push(eval(cityName));
       this.uncuredCities.splice(this.uncuredCities.indexOf(cityName), 1);
     }
   }
