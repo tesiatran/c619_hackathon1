@@ -317,9 +317,9 @@ body{
    left: 50%;
 }
 
-/* .noViz {
+.noViz {
    visibility: hidden;
-} */
+}
 .win {
    display: inline-block;
    vertical-align: top;

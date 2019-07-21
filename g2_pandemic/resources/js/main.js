@@ -23,21 +23,24 @@ var player1 = new Player();
 
 // var p1card1 = null;
 
-var cityAtlanta = new City("Atlanta", "", "");
-var citySeattle = new City("Seattle", "", "");
-var cityLondon = new City("London", "", "");
-var citySantiago = new City("Santiago", "", "");
-var citySaoPaulo = new City("SaoPaulo", "", "");
-var cityJohannesburg = new City("Johannesburg", "", "");
-var cityHongKong = new City("HongKong", "", "");
-var citySapporo = new City("Sapporo", "", "");
-var citySydney = new City("Sydney", "", "");
+var Atlanta = new City("Atlanta", "", "");
+var Seattle = new City("Seattle", "", "");
+var London = new City("London", "", "");
+var Santiago = new City("Santiago", "", "");
+var SaoPaulo = new City("SaoPaulo", "", "");
+var Johannesburg = new City("Johannesburg", "", "");
+var HongKong = new City("HongKong", "", "");
+var Sapporo = new City("Sapporo", "", "");
+var Sydney = new City("Sydney", "", "");
 
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
-var cure = new ActionButton("", "treatDisease", "");
+var treat = new ActionButton("", "treatDisease", "");
 
 var game = new GameStats();
+$('.playerICContainer.player_1').on('click', game.cureCity(this));
+
+var researchCenterCity = new ResearchStatus();
 
 var outbreakCounter = (4);
 
@@ -47,7 +50,7 @@ function initializeApp(){
    playerdeck.shuffle();
 
    var treatDisease = new ActionButton("", "treatDisease", "");
-   treatDisease.addClickHandler(cure);
+   treatDisease.addClickHandler(treat);
 
    player1hand = playerdeck.dealCards(3);
    player2hand = playerdeck.dealCards(3);
@@ -55,18 +58,18 @@ function initializeApp(){
    player1.receiveCards(player1hand);
    player2.receiveCards(player2hand);
 
-   cityAtlanta.addClickHandler();
-   citySeattle.addClickHandler();
-   cityLondon.addClickHandler();
-   citySantiago.addClickHandler();
-   citySaoPaulo.addClickHandler();
-   cityJohannesburg.addClickHandler();
-   cityHongKong.addClickHandler();
-   citySapporo.addClickHandler();
-   citySydney.addClickHandler();
+   Atlanta.addClickHandler();
+   Seattle.addClickHandler();
+   London.addClickHandler();
+   Santiago.addClickHandler();
+   SaoPaulo.addClickHandler();
+   Johannesburg.addClickHandler();
+   HongKong.addClickHandler();
+   Sapporo.addClickHandler();
+   Sydney.addClickHandler();
 
-  function cure(){
-    playerOne.cure();
+  function treat(){
+    playerOne.treat();
   }
 
    directFlight.addClickHandler();
@@ -83,6 +86,11 @@ function initializeApp(){
    }
 
    $("#outbreak").text("OUTBREAKS" + outbreakCounter);
+   $('.playerHandContainer .player_1').on('click', function(){
+      game.cureCity(eval($(this).text()));
+   });
+
+
 }
 
 var playerOne = new Player("red", ".playerOne");

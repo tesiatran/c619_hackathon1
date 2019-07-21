@@ -3,31 +3,41 @@ class Player {
     this.turnActive = null;
     this.cards = [];
     this.location = "Atlanta";
-    this.infectedCities = ["Seattle", "SaoPaulo", "Sapporo", "London"];
+    this.infectedCities = ["Seattle", "SaoPaulo", "Sapporo", "London"]
     this.color = color;
     this.playerClass = playerClass;
     $('.playerOne').addClass('noViz')
     this.renderMove();
   }
+
   receiveCards(inputCards){
     for (var i = 0; i < inputCards.length; i++){
       this.cards.push(inputCards[i]);
     }
   }
+
   removeCard(){
     this.cards.pop();
     console.log('player card array :' + this.cards)
   }
+
   move(targetLocation){
     $('#' + this.location + " "+this.playerClass).addClass('noViz');
     this.location = targetLocation;
-    this.renderMove();
+    this.renderMove();//call condition for curing or treating disease, and have correct display messages
+
+    if(this.researchStation === true){
+      $(this.researchStation).removeClass(".noViz");
+      // this.cure();
+    } else{
+      // this.treat();
+    }
   }
 
-  cure(){
+  treat(){
     if (this.infectedCities.includes(this.location)){
       outbreakCounter--;
-      $("#outbreak").text("OUTBREAK count: " + outbreakCounter);
+      $("#outbreak").text("OUTBREAK count: " + game.outbreakCount);
       this.infectedCities.splice(this.infectedCities.indexOf(this.location), 1);
       if (outbreakCounter == 0){
         $('.win').removeClass('noViz');
@@ -36,6 +46,11 @@ class Player {
     return $('#'+this.location + " .infectBlockOne").hide();
   }
 
+  discoverCure(target){
+    if (player1hand.includes(target)){
+      game.cureCity(target);
+    }
+  }
 
   renderMove(){
     $('#' + this.location + " " + this.playerClass).removeClass('noViz');
@@ -49,4 +64,5 @@ class Player {
       console.log("You do not have the card");
     }
   }
+
 }
