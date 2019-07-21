@@ -22,9 +22,10 @@ class Player {
     this.renderMove();//call condition for curing or treating disease, and have correct display messages
 
     if(this.researchStation === true){
-      this.cure();
+      $(this.researchStation).removeClass(".noViz");
+      // this.cure();
     } else{
-      this.treat();
+      // this.treat();
     }
   }
 
@@ -58,5 +59,5 @@ class Player {
       console.log("You do not have the card");
     }
   }
-  
+
 }
