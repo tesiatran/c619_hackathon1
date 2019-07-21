@@ -2,12 +2,12 @@ class CardControl{
   constructor(){
 
   }
-  function removePlayerCard(player) {
-    console.log('removePlayerCard');
+
+  removePlayerCard(player){
     this.displayDeck();
   }
-  function addDeckToPlayer(playerObject){
-    console.log('addDeckToPlayer');
+
+  addDeckToPlayer(playerObject){
     var playerdeck = new Deck();
     [playerObject].shuffle();
     [playerObject].receiveCards(playerdeck)
@@ -18,19 +18,19 @@ class CardControl{
     // player2.receiveCards(player2hand);
     this.displayDeck();
   }
-  function displayDeck(){
-    console.log('loadDeck')
+
+  displayDeck(){
     var p1card = null;
     var p2card = null;
-    for (var index = 0; index < player1hand.length; index++) {
+
+    for(var index = 0; index < player1hand.length; index++){
       p1card = player1hand[index];
       $('#p1card' + (index + 1)).text(p1card);
     }
-    for (var index = 0; index < player2hand.length; index++) {
+
+    for(var index = 0; index < player2hand.length; index++){
       p2card = player2hand[index];
       $('#p2card' + (index + 1)).text(p2card);
     }
   }
 }
-
-// var player1hand = null;

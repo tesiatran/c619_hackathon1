@@ -71,6 +71,7 @@ body{
    display: inline-block;
    position: relative;
 }
+
 .bottomDisplayContainer{
    height: 15%;
    width: 100%;
@@ -78,6 +79,7 @@ body{
    display: inline-block;
    position: relative;
 }
+
 .playerActionsContainer{
    height: 98%;
    width: 48%;
@@ -93,6 +95,7 @@ body{
    display: inline-block;
    position: relative;
 }
+
 .playerOneNameContainer,
 .playerTwoNameContainer{
    margin: 7%;
@@ -104,12 +107,15 @@ body{
    position: relative;
    border-radius: 15px;
 }
+
 .playerOneNameContainer{
    background-color:rebeccapurple;
 }
+
 .playerTwoNameContainer{
    background-color:rgb(233, 102, 1);
 }
+
 .playerHandContainer{
    height: 70%;
    width: 95%;
@@ -126,6 +132,7 @@ body{
    background-size:cover;
    margin-left: 7%;
 }
+
 .outbreak {
    height: 33%;
    width: 93%;
@@ -141,7 +148,9 @@ body{
    background-repeat: no-repeat;
    background-size:cover;
    margin-left: 7%;
+   text-align: center;
 }
+
 .cityContainer{
    height: 19%;
    width: 99%;
@@ -149,40 +158,48 @@ body{
    display: inline-block;
    position: relative;
 }
+
 .city {
    width: 60px;
    height: 60px;
    position: relative;
    border-radius: 15px;
 }
+
 .cityTop,
 .cityMiddle,
 .cityBottom {
    height: 20px;
 }
+
 .seattle .city{
    background-color: #179cfa;
    left: 25%;
    top: 50%;
 }
+
 .atlanta .city {
    background-color: #179cfa;
    left: 75%;
 }
+
 .london .city{
    background-color: #179cfa;
    left: 33%;
 }
+
 .sapporo .city {
    background-color:#fa3552;
    left: 55%;
    top: 30%;
 }
+
 .hongKong .city {
    background-color:#fa3552;
    left: 28%;
    top: 50%;
 }
+
 .sydney .city{
    background-color:#fa3552;
    left: 60%;
@@ -192,15 +209,18 @@ body{
    background-color:#edc525;
    left: 67%;
 }
+
 .santiago .city{
    background-color:#edc525;
    left: 72%;
 }
+
 .saoPaulo .city{
    background-color:#edc525;
    left:9%;
    top: 10%;
 }
+
 .left,
 .center,
 .right {
@@ -208,6 +228,7 @@ body{
    width: 31%;
    display: inline-block;
 }
+
 .center {
    background-image: url("./resources/images/beaker.png");
    background-repeat: no-repeat;
@@ -215,6 +236,7 @@ body{
    background-position:contain;
    margin-top: 2px;
 }
+
 .infectBlock1,
 .infectBlock2,
 .infectBlock3,
@@ -282,6 +304,7 @@ body{
    border-width: 2px;
    border-style: solid;
 }
+
 .playerTwo{
    display: inline-block;
    background-color: rgba(255, 140, 0, 0.755);
@@ -293,7 +316,6 @@ body{
    border-style: solid;
    visibility: hidden;
 }
-
 
 .treatDisease{
    height: 70%;
@@ -320,6 +342,7 @@ body{
 .noViz {
    visibility: hidden;
 }
+
 .win {
    display: inline-block;
    vertical-align: top;
@@ -340,6 +363,7 @@ body{
    border: 1px solid white;
    border-radius: 5px;
 }
+
 .panic{
    display: inline-block;
    vertical-align: top;

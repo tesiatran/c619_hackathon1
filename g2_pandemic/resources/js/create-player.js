@@ -1,33 +1,33 @@
-class Player {
+class Player{
   constructor(color, playerClass){
     this.turnActive = null;
     this.cards = [];
     this.location = "Atlanta";
-    this.infectedCities = ["Seattle", "SaoPaulo", "Sapporo", "London"]
+    this.infectedCities = [];
     this.color = color;
+    this.researchStation = researchCenterCity;
     this.playerClass = playerClass;
     $('.playerOne').addClass('noViz')
     this.renderMove();
   }
 
   receiveCards(inputCards){
-    for (var i = 0; i < inputCards.length; i++){
+    for(var i = 0; i < inputCards.length; i++){
       this.cards.push(inputCards[i]);
     }
   }
 
   removeCard(){
     this.cards.pop();
-    console.log('player card array :' + this.cards)
   }
 
   move(targetLocation){
-    $('#' + this.location + " "+this.playerClass).addClass('noViz');
+    $('#' + this.location + " " + this.playerClass).addClass('noViz');
     this.location = targetLocation;
-    this.renderMove();//call condition for curing or treating disease, and have correct display messages
+    this.renderMove();
 
-    if(this.researchStation === true){
-      $(this.researchStation).removeClass(".noViz");
+    if(this.location === researchCenterCity.cityName){
+      $('.research' + this.location).removeClass("noViz");
       // this.cure();
     } else{
       // this.treat();
@@ -35,19 +35,19 @@ class Player {
   }
 
   treat(){
-    if (this.infectedCities.includes(this.location)){
+    if(this.infectedCities.includes(this.location)){
       outbreakCounter--;
       $("#outbreak").text("OUTBREAK count: " + game.outbreakCount);
       this.infectedCities.splice(this.infectedCities.indexOf(this.location), 1);
-      if (outbreakCounter == 0){
+      if(outbreakCounter === 0){
         $('.win').removeClass('noViz');
       }
     }
-    return $('#'+this.location + " .infectBlockOne").hide();
+    return $('#' + this.location + " .infectBlockOne").hide();
   }
 
   discoverCure(target){
-    if (player1hand.includes(target)){
+    if(player1hand.includes(target)){
       game.cureCity(target);
     }
   }
@@ -57,12 +57,11 @@ class Player {
   }
 
   directFlight(targetLocation){
-    if (this.cards.includes(targetLocation)){
+    if(this.cards.includes(targetLocation)){
         this.move(targetLocation);
         this.cards.splice(this.cards.indexOf(targetLocation), 1);
-    } else {
-      console.log("You do not have the card");
+    } else{
+
     }
   }
-
 }
