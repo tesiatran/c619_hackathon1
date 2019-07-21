@@ -6,5 +6,8 @@ class ResearchStatus{
    randomResearch(){
       var chosenCity = this.cities[Math.floor(Math.random() * (this.cities.length))];
       chosenCity.populateResearch();
+      researchCenterCity = chosenCity;
+
+      return researchCenterCity;
    }
 }

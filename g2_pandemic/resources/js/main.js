@@ -1,16 +1,10 @@
 
 $(document).ready(initializeApp)
-// var diseaseColorArray = ["blue", "red", "yellow"];
-
-// var blueCities = ["Atlanta", "Seattle", "London"];
-// var redCities = ["HongKong", "Sapporo", "Sydney"];
-// var yellowCities = ["Santiago", "SaoPaulo", "Johannesburg"];
 
 var cityClicked = null;
 var directFlightClicked = null;
 var shuttleFlightClicked = null;
 var treatDiseaseClicked = null;
-
 
 var player1 = new Player();
 var player2 = new Player();
@@ -24,15 +18,15 @@ var player2hand = null;
 
 var p1card1 = null;
 
-var Atlanta = new City("Atlanta", "", "");
-var Seattle = new City("Seattle", "", "");
-var London = new City("London", "", "");
-var Santiago = new City("Santiago", "", "");
-var SaoPaulo = new City("SaoPaulo", "", "");
-var Johannesburg = new City("Johannesburg", "", "");
-var HongKong = new City("HongKong", "", "");
-var Sapporo = new City("Sapporo", "", "");
-var Sydney = new City("Sydney", "", "");
+var Atlanta = new City("Atlanta", "");
+var Seattle = new City("Seattle", "");
+var London = new City("London", "");
+var Santiago = new City("Santiago", "");
+var SaoPaulo = new City("SaoPaulo", "");
+var Johannesburg = new City("Johannesburg", "");
+var HongKong = new City("HongKong", "");
+var Sapporo = new City("Sapporo", "");
+var Sydney = new City("Sydney", "");
 
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
@@ -41,7 +35,9 @@ var treat = new ActionButton("", "treatDisease", "");
 var game = new GameStats();
 $('.playerICContainer.player_1').on('click', game.cureCity(this));
 
-var researchCenterCity = new ResearchStatus();
+var researchStatus = new ResearchStatus();
+
+var researchCenterCity = researchStatus.randomResearch();
 
 var outbreakCounter = (4);
 
@@ -99,7 +95,7 @@ function initializeApp(){
    //    $('#player2Card' + (index + 1)).text(p2card);
    // }
 
-   $("#outbreak").text("OUTBREAKS" + outbreakCounter);
+   $("#outbreak").text("OUTBREAKS: " + outbreakCounter);
    $('.playerHandContainer .player_1').on('click', function(){
       game.cureCity(eval($(this).text()));
    });
