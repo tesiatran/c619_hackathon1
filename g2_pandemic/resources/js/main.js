@@ -12,6 +12,7 @@ var player2 = new Player();
 var playerdeck = new Deck();
 var citydeck = new Deck();
 
+var gameControlCards = new ControlCards();
 var player1hand = null;
 var player2hand = null;
 
@@ -40,6 +41,7 @@ var researchCenterCity = researchStatus.randomResearch();
 
 var outbreakCounter = (4);
 
+var cureCounter = null;
 
 function initializeApp(){
    playerdeck.shuffle();
@@ -49,9 +51,10 @@ function initializeApp(){
 
    player1hand = playerdeck.dealCards(3);
    player2hand = playerdeck.dealCards(3);
-
    player1.receiveCards(player1hand);
    player2.receiveCards(player2hand);
+   // dealToPlayer(player1, 3, playerdeck);
+   // dealToPlayer(player2, 3, playerdeck);
 
    Atlanta.addClickHandler();
    Seattle.addClickHandler();
@@ -69,16 +72,28 @@ function initializeApp(){
 
    directFlight.addClickHandler();
    shuttleFlight.addClickHandler();
+   gameControlCards.displayCards();
 
-   for(var index = 0; index < player1hand.length; index++){
-      p1card = player1hand[index];
-      $('#p1card' + (index + 1)).text(p1card);
-   }
+// function displayCards() {
+//    for (var index = 0; index < player1hand.length; index++) {
+//       p1card = player1hand[index];
+//       $('#player1Card' + (index + 1)).text(p1card);
+//    }
 
-   for(var index = 0; index < player2hand.length; index++){
-      p2card = player2hand[index];
-      $('#p2card' + (index + 1)).text(p2card);
-   }
+//    for (var index = 0; index < player2hand.length; index++) {
+//       p2card = player2hand[index];
+//       $('#player2Card' + (index + 1)).text(p2card);
+//    }
+// }
+   // for(var index = 0; index < player1hand.length; index++){
+   //    p1card = player1hand[index];
+   //    $('#player1Card' + (index + 1)).text(p1card);
+   // }
+
+   // for(var index = 0; index < player2hand.length; index++){
+   //    p2card = player2hand[index];
+   //    $('#player2Card' + (index + 1)).text(p2card);
+   // }
 
    $("#outbreak").text("OUTBREAKS: " + outbreakCounter);
    $('.playerHandContainer .player_1').on('click', function(){
