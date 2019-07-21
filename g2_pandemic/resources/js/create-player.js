@@ -14,6 +14,10 @@ class Player {
       this.cards.push(inputCards[i]);
     }
   }
+  removeCard(){
+    this.cards.pop();
+    console.log('player card array :' + this.cards)
+  }
   move(targetLocation){
     $('#' + this.location + " "+this.playerClass).addClass('noViz');
     this.location = targetLocation;
