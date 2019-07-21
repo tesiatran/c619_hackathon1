@@ -26,6 +26,7 @@ class City extends Player{
   populateResearch(){
     this.researchStation = true;
     console.log("There is a research station here!");
+    console.log(this);
   }
 
   addDisease(){
