@@ -1,9 +1,9 @@
 class GameStats{
   constructor(){
     this.outbreakCount = null;
-    //Receives list of cured cities.
-    this.uncuredCities = [cityLondon, citySeattle, cityAtlanta, citySaoPaulo, citySantiago, cityJohannesburg, cityHongKong, citySapporo, citySydney];
-    this.cities = this.uncuredCities;
+    //Recieves list of cured cities.
+    this.uncuredCities = [cityLondon, citySeattle,cityAtlanta,citySaoPaulo,citySantiago,cityJohannesburg,cityHongKong,citySapporo,citySydney];
+    this.cities = [...this.uncuredCities];
     this.curedCities = {};
     this.turnCount = null;
   }
@@ -34,10 +34,6 @@ class GameStats{
   randomOutbreak(){
     var chosenCity = this.uncuredCities[Math.floor(Math.random() * this.uncuredCities.length)];
     chosenCity.addDisease();
-  }
-
-  addOutBreak(city){
-    city.addDisease();
   }
 
   updateCures(diseaseName){
