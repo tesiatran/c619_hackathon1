@@ -1,6 +1,6 @@
 class ResearchStatus{
    constructor(){
-      this.cities = [cityAtlanta, citySeattle, cityLondon, citySantiago, citySaoPaulo, cityJohannesburg, cityHongKong, citySapporo, citySydney];
+      this.cities = [Atlanta, Seattle, London, Santiago, SaoPaulo, Johannesburg, HongKong, Sapporo, Sydney];
    }
 
    randomResearch(){
