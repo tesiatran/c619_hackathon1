@@ -40,6 +40,8 @@ var treat = new ActionButton("", "treatDisease", "");
 var game = new GameStats();
 $('.playerICContainer.player_1').on('click', game.cureCity(this));
 
+var researchCenterCity = new ResearchStatus();
+
 var outbreakCounter = (4);
 
 // var cureCounter = null;

@@ -23,9 +23,10 @@ class City extends Player{
     console.log("There are "+this.playerCount+" player(s) in this city");
   }
 
-  buildResearch(){
+  populateResearch(){
     this.researchStation = true;
-    console.log("You have built a research station!");
+    console.log("There is a research station here!");
+    console.log(this);
   }
 
   addDisease(){

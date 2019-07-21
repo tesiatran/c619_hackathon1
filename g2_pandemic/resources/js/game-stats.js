@@ -23,8 +23,6 @@ class GameStats{
   getCured(){
     return this.curedCities;
   }
-  addResearchStation(){
-  }
 
   cureCity(cityName){
     if (this.uncuredCities.includes(cityName)){
@@ -49,6 +47,7 @@ class GameStats{
   addTurn(){
     this.turnCount++;
   }
+  
   checkOutbreaks(){
     if (outbreakCounter === 0){
       //win
