@@ -28,6 +28,7 @@ var HongKong = new City("HongKong", "");
 var Sapporo = new City("Sapporo", "");
 var Sydney = new City("Sydney", "");
 
+var gameTerminalDisplay = new TerminalDisplay();
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
 var treat = new ActionButton("", "treatDisease", "");
@@ -44,14 +45,13 @@ var outbreakCounter = (4);
 var cureCounter = null;
 
 function initializeApp(){
-   debugger;
    playerdeck.shuffle();
 
    var treatDisease = new ActionButton("", "treatDisease", "");
    treatDisease.addClickHandler(treat);
 
    player1hand = playerdeck.dealCards(3);
-   player2hand = playerdeck.dealCards(3);
+   player2hand = playerdeck.dealCards(0);
    player1.receiveCards(player1hand);
    player2.receiveCards(player2hand);
    // dealToPlayer(player1, 3, playerdeck);
