@@ -98,7 +98,8 @@ function initializeApp(){
 
    $("#outbreak").text("OUTBREAKS: " + outbreakCounter);
    $('.playerHandContainer .player_1').on('click', function(){
-      game.cureCity(eval($(this).text()));
+      var target = $(this).text();
+      game.cureCity(target);
    });
 }
 
