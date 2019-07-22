@@ -3,11 +3,12 @@ class TerminalDiplay {
 
   }
 
-  function winGame {
+  winGame() {
     console.log('winGame');
+
   }
-  
-  function loseGame {
+
+  loseGame() {
     console.log('loseGame');
   }
 }

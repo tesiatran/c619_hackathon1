@@ -10,17 +10,20 @@ class Player{
     $('.playerOne').addClass('noViz')
     this.renderMove();
   }
-
   receiveCards(inputCards){
     for(var i = 0; i < inputCards.length; i++){
       this.cards.push(inputCards[i]);
     }
   }
-
-  removeCard(){
-    this.cards.pop();
+  // card index is 0-2, top middle or last div in card container
+  removeCard(cardIndex){
+    console.log('removeCard');
+    this.cards.splice(cardIndex,1);
   }
-
+  getCards(){
+    console.log('getCards')
+    return this.cards;
+  }
   move(targetLocation){
     $('#' + this.location + " " + this.playerClass).addClass('noViz');
     this.location = targetLocation;
