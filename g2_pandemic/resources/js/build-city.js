@@ -6,6 +6,7 @@ class City extends Player{
     this.diseaseCount = 0;
     this.diseaseType = color;
     this.diseaseCured = null;
+    this.cityCured = false;
     this.researchStation = null;
     this.playerCount = 0;
   }
@@ -13,7 +14,12 @@ class City extends Player{
   populateResearch(){
     this.researchStation = researchCenterCity;
   }
-
+  getCureStatus(){
+    return this.cityCured;
+  }
+  cureCity(){
+    this.cityCured = true;
+  }
   addDisease(){
     if(this.diseaseCured === true){
       return;

@@ -17,11 +17,9 @@ class Player{
   }
   // card index is 0-2, top middle or last div in card container
   removeCard(cardIndex){
-    console.log('removeCard');
     this.cards.splice(cardIndex,1);
   }
   getCards(){
-    console.log('getCards')
     return this.cards;
   }
   move(targetLocation){
@@ -32,6 +30,7 @@ class Player{
     if(this.location === researchCenterCity.cityName){
       $('.research' + this.location).removeClass("noViz");
       gameTerminalDisplay.researchMessage();
+      console.log("researchCenterCity ", researchCenterCity);
       // this.cure();
     } else{
       // this.treat();

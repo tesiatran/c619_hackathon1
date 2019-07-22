@@ -27,7 +27,17 @@ var Johannesburg = new City("Johannesburg", "");
 var HongKong = new City("HongKong", "");
 var Sapporo = new City("Sapporo", "");
 var Sydney = new City("Sydney", "");
-
+var cityList = {
+   'Atl': Atlanta,
+   'Sea': Seattle,
+   'Lon': London,
+   'San': Santiago,
+   'Sao': SaoPaulo,
+   'Joh': Johannesburg,
+   'Hon': HongKong,
+   'Sapporo': Sapporo,
+   'Sydney' : Sydney
+};
 var gameTerminalDisplay = new TerminalDisplay();
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
@@ -86,6 +96,9 @@ function handleCardClick(event) {
    var cardData = targetCard.attr('data-card');
    var cardName = targetCard.text();
    cardName = cardName.slice(0,3);
+   var cityToCure = cityList[cardName];
+   cityToCure.cureCity();
+   console.log('cityToCure ', cityToCure);
    gameControlCards.replaceCard(cardData);
    var style = {
       'border-radius': '15px',

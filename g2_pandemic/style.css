@@ -3,10 +3,6 @@ body{
    width: 95vw;
    display: inline-block;
    background-color:#141c43;
-   /* border-radius: 5px;
-   border-style: solid;
-   border-width: 1px;
-   color: white; */
 }
 .mainGameContainer{
    height: 95%;
@@ -58,7 +54,6 @@ body{
 .continentContainer{
    height: 98%;
    width: 32.5%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -74,7 +69,6 @@ body{
 .bottomDisplayContainer{
    height: 15%;
    width: 100%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -82,7 +76,6 @@ body{
 .playerActionsContainer{
    height: 98%;
    width: 48%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -90,7 +83,6 @@ body{
 .citiesActionsContainer{
    height: 98%;
    width: 49%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
@@ -154,14 +146,10 @@ body{
 .cityContainer{
    height: 19%;
    width: 99%;
-   /* border: 1px solid; */
    display: inline-block;
    position: relative;
 }
 
-/* .city{
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-} */
 .allPlayersContainer,
 .city {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -172,7 +160,6 @@ body{
    height: 60px;
    position: relative;
    border-radius: 15px;
-
 }
 
 .cityTop,
