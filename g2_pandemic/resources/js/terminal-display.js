@@ -16,7 +16,7 @@ class TerminalDisplay{
   }
 
   startGameMessage(){
-    $('#outbreak').text('FLY TO A CITY! TREAT OR CURE THE POPULATION!');
+    $('#outbreak').text('CLICK ON A CITY TO FLY TO IT! FIND THE CURE TO TREAT THE POPULATION!');
   }
 
   researchMessage(){
@@ -28,6 +28,6 @@ class TerminalDisplay{
   }
 
   cureMessage(cityName){
-    $('#outbreak').text(cityName + " has been CURED!");
+    $('#outbreak').text(cityName + " has been SAVED!");
   }
 }
