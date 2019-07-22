@@ -1,11 +1,11 @@
 class ActionButton{
   constructor(color, idName, containerName){
-    this.actionColor= color
+    this.actionColor = color
     this.domId = idName;
     this.domClass = idName
     this.containerId = containerName;
     this.targetElement = null;
-    this.addClickHandler= this.addClickHandler.bind(this);
+    this.addClickHandler = this.addClickHandler.bind(this);
   }
 
   addClickHandler(functionToAdd){
@@ -27,5 +27,4 @@ class ActionButton{
     actionDiv.css(style);
     this.addClickHandler();
   }
-
 }

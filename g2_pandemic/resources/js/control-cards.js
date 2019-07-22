@@ -1,20 +1,20 @@
-class ControlCards {
+class ControlCards{
   constructor(){
 
   }
 
-  displayCards() {
+  displayCards(){
     var p1card = null;
     var p2card = null;
     var playerOneHand = player1.getCards();
     var playerTwoHand = player2.getCards();
 
-    for (var index = 0; index < playerOneHand.length; index++) {
+    for(var index = 0; index < playerOneHand.length; index++){
         p1card = playerOneHand[index];
         $('#player1Card' + (index + 1)).text(p1card);
     }
 
-    for (var index = 0; index < playerTwoHand.length; index++) {
+    for(var index = 0; index < playerTwoHand.length; index++){
         p2card = playerTwoHand[index];
         $('#player2Card' + (index + 1)).text(p2card);
     }

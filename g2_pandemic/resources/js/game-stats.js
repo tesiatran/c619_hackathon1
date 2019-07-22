@@ -52,7 +52,7 @@ class GameStats{
     if (outbreakCounter === 0){
       game
     } else if (outbreakCounter === 9){
-      //lose
+
     }
   }
 }

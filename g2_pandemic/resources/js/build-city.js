@@ -14,12 +14,15 @@ class City extends Player{
   populateResearch(){
     this.researchStation = researchCenterCity;
   }
+
   cureCity(){
     this.cityCured = true;
   }
+
   getCureStatus(){
     return this.cityCured;
   }
+
   addDisease(){
     if(this.diseaseCured === true){
       return;
@@ -33,7 +36,8 @@ class City extends Player{
 
   handleClick(){
     playerOne.move(this.cityName);
-    for (var i=0; i<3; i++){
+
+    for(var i = 0; i < 3; i++){
       var randomCity = Math.floor(Math.random() * 9);
       var randomBlock = Math.floor(Math.random() * 4);
       var cityArray = ["Atlanta", "Seattle", "London", "Santiago", "SaoPaulo",
@@ -42,8 +46,9 @@ class City extends Player{
       var targetInfect = '.' + cityArray[randomCity] + '.' + infectArray[randomBlock];
       $(targetInfect).removeClass('noViz');
     }
+
     outbreakCounter++;
-    if (outbreakCounter >20) {
+    if(outbreakCounter > 20){
       gameTerminalDisplay.loseGame();
     }
   }

@@ -1,33 +1,33 @@
-class TerminalDisplay {
+class TerminalDisplay{
   constructor(){
 
   }
 
-  winGame() {
+  winGame(){
     $('#win').removeClass('noViz');
     $('#success')[0].play();
-    $('#outbreak').text('OUTBREAK CONTAINED!');
+    $('#outbreak').text('YOU WON! OUTBREAK CONTAINED!');
   }
 
-  loseGame() {
+  loseGame(){
     $('#win').removeClass('noViz');
-    $('#outbreak').text('LEAVE THE PLANET!');
+    $('#outbreak').text('YOU LOST! LEAVE THE PLANET!');
     $('#loseGame')[0].play();
   }
 
-  startGameMessage() {
+  startGameMessage(){
     $('#outbreak').text('FLY TO A CITY! TREAT OR CURE THE POPULATION!');
   }
 
-  researchMessage() {
+  researchMessage(){
     $('#outbreak').text('CURE FOUND! PICK AN ACTIVE CITY CARD.');
   }
 
-  outbreakMessage() {
+  outbreakMessage(){
     $('#outbreak').text("OUTBREAKS: " + outbreakCounter);
   }
 
-  cureMessage(cityName) {
+  cureMessage(cityName){
     $('#outbreak').text(cityName + " has been CURED!");
   }
 }

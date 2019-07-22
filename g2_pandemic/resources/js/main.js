@@ -33,6 +33,7 @@ var cityList = {
    'Sap': Sapporo,
    'Syd': Sydney
 };
+
 var gameTerminalDisplay = new TerminalDisplay();
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
@@ -42,15 +43,13 @@ var game = new GameStats();
 $('.playerICContainer.player_1').on('click', game.cureCity(this));
 
 var researchStatus = new ResearchStatus();
-
 var researchCenterCity = researchStatus.randomResearch();
 var foundResearch = false;
 var researchLocation = null;
 var outbreakCounter = 0;
-
 var cureCounter = null;
 
-function initializeApp() {
+function initializeApp(){
    playerdeck.shuffle();
 
    var treatDisease = new ActionButton("", "treatDisease", "");
@@ -71,7 +70,7 @@ function initializeApp() {
    Sapporo.addClickHandler();
    Sydney.addClickHandler();
 
-   function treat() {
+   function treat(){
       playerOne.treat();
    }
 
@@ -83,15 +82,17 @@ function initializeApp() {
    $('.playerHandContainer .player_1').on("click", handleCardClick);
 }
 
-function handleCardClick(event) {
-   if (foundResearch) {
+function handleCardClick(event){
+   if(foundResearch){
       var targetCard = $(event.target);
       var cardData = targetCard.attr('data-card');
       var cardName = targetCard.text();
       cardName = cardName.slice(0, 3);
+
       var cityToCure = cityList[cardName];
       cityToCure.cureCity();
       gameControlCards.replaceCard(cardData);
+
       var style = {
          'border-radius': '15px',
          'color': 'rgb(6, 245, 54)',
@@ -104,7 +105,7 @@ function handleCardClick(event) {
       researchCenterCity = researchStatus.randomResearch();
       $('.research' + researchLocation).addClass("noViz");
       cureCounter++
-      if (cureCounter===4) {
+      if(cureCounter===4){
          gameTerminalDisplay.winGame();
       }
    }
