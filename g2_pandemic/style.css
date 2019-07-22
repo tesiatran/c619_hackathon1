@@ -159,11 +159,13 @@ body{
    position: relative;
 }
 
-.city{
+/* .city{
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.allPlayersContainer{
+} */
+.allPlayersContainer,
+.city {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
 }
 .city {
    width: 60px;
