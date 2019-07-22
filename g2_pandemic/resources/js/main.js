@@ -82,6 +82,7 @@ function initializeApp(){
    // });
    $('.playerHandContainer .player_1').on("click", handleCardClick);
 }
+
 function handleCardClick(event) {
    var targetCard = $(event.target);
    var cardData = targetCard.attr('data-card');
