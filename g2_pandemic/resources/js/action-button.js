@@ -6,7 +6,6 @@ class ActionButton{
     this.containerId = containerName;
     this.targetElement = null;
     this.addClickHandler= this.addClickHandler.bind(this);
-    // this.handleClick = this.handleClick.bind(this);
   }
 
   addClickHandler(functionToAdd){
@@ -29,7 +28,4 @@ class ActionButton{
     this.addClickHandler();
   }
 
-  // handleClick(){
-
-  // }
 }

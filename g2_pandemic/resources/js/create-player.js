@@ -17,7 +17,6 @@ class Player{
     }
   }
 
-  // card index is 0-2, top middle or last div in card container
   removeCard(cardIndex){
     console.log('removeCard');
     this.cards.splice(cardIndex,1);
@@ -27,7 +26,7 @@ class Player{
     console.log('getCards')
     return this.cards;
   }
-  
+
   move(targetLocation){
     $('#' + this.location + " " + this.playerClass).addClass('noViz');
     this.location = targetLocation;
@@ -35,8 +34,9 @@ class Player{
 
     if(this.location === researchCenterCity.cityName){
       $('.research' + this.location).removeClass("noViz");
+      foundResearch = true;
+      researchLocation = this.location;
       gameTerminalDisplay.researchMessage();
-      // this.cure();
     } else{
       // this.treat();
     }
@@ -45,11 +45,11 @@ class Player{
   treat(){
     if(this.infectedCities.includes(this.location)){
       outbreakCounter--;
-      // $("#outbreak").text("OUTBREAK count: " + game.outbreakCount);
+      $("#outbreak").text("OUTBREAKS : " + game.outbreakCount);
       gameTerminalDisplay.outbreakMessage();
       this.infectedCities.splice(this.infectedCities.indexOf(this.location), 1);
       if(outbreakCounter === 0){
-        // $('.win').removeClass('noViz');
+        $('.win').removeClass('noViz');
         gameTerminalDisplay.winMessage();
       }
     }
