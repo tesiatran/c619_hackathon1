@@ -28,6 +28,7 @@ var HongKong = new City("HongKong", "");
 var Sapporo = new City("Sapporo", "");
 var Sydney = new City("Sydney", "");
 
+var gameTerminalDisplay = new TerminalDisplay();
 var directFlight = new ActionButton("", "directFlight", "");
 var shuttleFlight = new ActionButton("", "shuttleFlight", "");
 var treat = new ActionButton("", "treatDisease", "");
@@ -44,14 +45,13 @@ var outbreakCounter = (4);
 var cureCounter = null;
 
 function initializeApp(){
-   debugger;
    playerdeck.shuffle();
 
    var treatDisease = new ActionButton("", "treatDisease", "");
    treatDisease.addClickHandler(treat);
 
    player1hand = playerdeck.dealCards(3);
-   player2hand = playerdeck.dealCards(3);
+   player2hand = playerdeck.dealCards(0);
    player1.receiveCards(player1hand);
    player2.receiveCards(player2hand);
    // dealToPlayer(player1, 3, playerdeck);
@@ -75,32 +75,27 @@ function initializeApp(){
    shuttleFlight.addClickHandler();
    gameControlCards.displayCards();
 
-// function displayCards() {
-//    for (var index = 0; index < player1hand.length; index++) {
-//       p1card = player1hand[index];
-//       $('#player1Card' + (index + 1)).text(p1card);
-//    }
+   gameTerminalDisplay.startGameMessage();
+   // $("#outbreak").text("OUTBREAKS: " + outbreakCounter);
+   // $('.playerHandContainer .player_1').on('click', function(){
+   //    game.cureCity(eval($(this).text()));
+   // });
+   $('.playerHandContainer .player_1').on("click", handleCardClick);
+}
+function handleCardClick(event) {
+   var targetCard = $(event.target);
+   var cardData = targetCard.attr('data-card');
+   var cardName = targetCard.text();
+   cardName = cardName.slice(0,3);
+   gameControlCards.replaceCard(cardData);
+   var style = {
+      'border-radius': '15px',
+      'color': 'rgb(6, 245, 54)',
+      'border-width': '3px',
+      'border-style': 'solid'
+   }
+   $('.' + cardName).css(style);
 
-//    for (var index = 0; index < player2hand.length; index++) {
-//       p2card = player2hand[index];
-//       $('#player2Card' + (index + 1)).text(p2card);
-//    }
-// }
-   // for(var index = 0; index < player1hand.length; index++){
-   //    p1card = player1hand[index];
-   //    $('#player1Card' + (index + 1)).text(p1card);
-   // }
-
-   // for(var index = 0; index < player2hand.length; index++){
-   //    p2card = player2hand[index];
-   //    $('#player2Card' + (index + 1)).text(p2card);
-   // }
-
-   $("#outbreak").text("OUTBREAKS: " + outbreakCounter);
-   $('.playerHandContainer .player_1').on('click', function(){
-      var target = $(this).text();
-      game.cureCity(target);
-   });
 }
 
 var playerOne = new Player("red", ".playerOne");

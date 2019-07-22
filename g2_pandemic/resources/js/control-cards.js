@@ -18,7 +18,7 @@ class ControlCards {
   }
   replaceCard(cardIndex){
     console.log('replaceCard')
-    player1.removeCard();
+    player1.removeCard(cardIndex);
     player1.receiveCards(playerdeck.dealCards(1));
     this.displayCards();
   }

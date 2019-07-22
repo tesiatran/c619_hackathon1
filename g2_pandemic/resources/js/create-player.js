@@ -31,6 +31,7 @@ class Player{
 
     if(this.location === researchCenterCity.cityName){
       $('.research' + this.location).removeClass("noViz");
+      gameTerminalDisplay.researchMessage();
       // this.cure();
     } else{
       // this.treat();
@@ -40,13 +41,15 @@ class Player{
   treat(){
     if(this.infectedCities.includes(this.location)){
       outbreakCounter--;
-      $("#outbreak").text("OUTBREAK count: " + game.outbreakCount);
+      // $("#outbreak").text("OUTBREAK count: " + game.outbreakCount);
+      gameTerminalDisplay.outbreakMessage();
       this.infectedCities.splice(this.infectedCities.indexOf(this.location), 1);
       if(outbreakCounter === 0){
-        $('.win').removeClass('noViz');
+        // $('.win').removeClass('noViz');
+        gameTerminalDisplay.winMessage();
       }
     }
-    return $('#' + this.location + " .infectBlockOne").hide();
+    return $('#' + this.location + " .infectBlockOne").addClass('noViz');
   }
 
   discoverCure(target){

@@ -11,6 +11,7 @@
       <script src="./resources/js/card-deck.js"></script>
       <script src="./resources/js/research-generator.js"></script>
       <script src="./resources/js/control-cards.js"></script>
+      <script src="./resources/js/terminal-display.js"></script>
       <script src="./resources/js/main.js"></script>
       <title>Pandemic</title>
    </head>
@@ -24,7 +25,7 @@
                   <div class="playerICContainer player_1" data-card="1" id="player1Card2"></div>
                   <div class="playerICContainer player_1" data-card="2" id="player1Card3"></div>
                </div>
-            </div>ß
+            </div>
             <div class="playerContainer noViz">
                <div class="playerTwoNameContainer"></div>
                <div class="playerHandContainer">
@@ -34,12 +35,13 @@
                </div>
             </div>
             <div class="outbreak" id="outbreak"></div>
+            <div class="outbreakMessage" Id="outbreakMessage"></div>
          </div>
          <div class="mapContainer">
             <div class="continentContainer" id="leftContinent">
                <div class="cityContainer" id="FairBanks"></div>
                <div class="cityContainer seattle" id="Seattle">
-                  <div class='city'>
+                  <div class='city Sea'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -59,7 +61,7 @@
                   </div>
                </div>
                <div class="cityContainer atlanta" id="Atlanta">
-                  <div class='city'>
+                  <div class='city Atl'>
                      <div class='cityTop'>
                         <div class='playerOne'></div>
                         <div class='playerTwo'></div>
@@ -80,7 +82,7 @@
                </div>
                <div class="cityContainer lima" id="Lima"></div>
                <div class="cityContainer santiago" id="Santiago">
-                  <div class='city'>
+                  <div class='city San'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -103,7 +105,7 @@
             <div class="continentContainer" id="centerContinent">
                <div class="cityContainer norway" id="Norway"></div>
                <div class="cityContainer london" id="London">
-                  <div class='city'>
+                  <div class='city Lon'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -124,7 +126,7 @@
                </div>
                <div class="cityContainer" id="Lagos"></div>
                <div class="cityContainer saoPaulo" id="SaoPaulo">
-                  <div class='city'>
+                  <div class='city Sao'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -144,7 +146,7 @@
                   </div>
                </div>
                <div class="cityContainer johannesburg" id="Johannesburg">
-                  <div class='city'>
+                  <div class='city Joh'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -167,7 +169,7 @@
             <div class="continentContainer" id="rightContinent">
                <div class="cityContainer" id="HoChiMinhCity"></div>
                <div class="cityContainer sapporo" id="Sapporo">
-                  <div class='city'>
+                  <div class='city Sap'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -187,7 +189,7 @@
                   </div>
                </div>
                <div class="cityContainer hongKong" id="HongKong">
-                  <div class='city'>
+                  <div class='city Hon'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -208,7 +210,7 @@
                </div>
                <div class="cityContainer" id="Manila"></div>
                <div class="cityContainer sydney" id="Sydney">
-                  <div class='city'>
+                  <div class='city Syd'>
                      <div class='cityTop'>
                         <div class='playerOne noViz'></div>
                         <div class='playerTwo'></div>
@@ -232,7 +234,7 @@
          <div class="bottomDisplayContainer">
                <div class="treatDisease" id="treatDisease"></div>
                <div class="panic"></div>
-               <div class="win noViz"></div>
+               <div class="win noViz" id='win'></div>
          </div>
       </div>
    </body>

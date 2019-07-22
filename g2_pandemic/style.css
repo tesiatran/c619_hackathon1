@@ -8,7 +8,6 @@ body{
    border-width: 1px;
    color: white; */
 }
-
 .mainGameContainer{
    height: 95%;
    width: 95%;
@@ -134,9 +133,9 @@ body{
 }
 
 .outbreak {
-   height: 33%;
-   width: 93%;
-   margin-top: 20%;
+   height: 16%;
+   width: 64%;
+   margin-top: 17%;
    border: solid;
    display: inline-block;
    position: relative;
@@ -149,6 +148,7 @@ body{
    background-size:cover;
    margin-left: 7%;
    text-align: center;
+   padding: 15%;
 }
 
 .cityContainer{
@@ -159,11 +159,20 @@ body{
    position: relative;
 }
 
+/* .city{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+.allPlayersContainer,
+.city {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+}
 .city {
    width: 60px;
    height: 60px;
    position: relative;
    border-radius: 15px;
+
 }
 
 .cityTop,
