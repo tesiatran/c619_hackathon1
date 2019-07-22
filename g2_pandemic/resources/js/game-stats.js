@@ -50,7 +50,7 @@ class GameStats{
 
   checkOutbreaks(){
     if (outbreakCounter === 0){
-      //win
+      game
     } else if (outbreakCounter === 9){
       //lose
     }

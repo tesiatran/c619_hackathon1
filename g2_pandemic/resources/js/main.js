@@ -44,6 +44,7 @@ var outbreakCounter = (4);
 var cureCounter = null;
 
 function initializeApp(){
+   debugger;
    playerdeck.shuffle();
 
    var treatDisease = new ActionButton("", "treatDisease", "");

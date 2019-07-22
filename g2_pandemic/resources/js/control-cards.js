@@ -2,20 +2,22 @@ class ControlCards {
   constructor(){
   }
   displayCards() {
+    console.log('displayCards');
     var p1card = null;
     var p2card = null;
-    for (var index = 0; index < player1hand.length; index++) {
-        p1card = player1hand[index];
+    var playerOneHand = player1.getCards();
+    var playerTwoHand = player2.getCards();
+    for (var index = 0; index < playerOneHand.length; index++) {
+        p1card = playerOneHand[index];
         $('#player1Card' + (index + 1)).text(p1card);
     }
-    for (var index = 0; index < player2hand.length; index++) {
-        p2card = player2hand[index];
+    for (var index = 0; index < playerTwoHand.length; index++) {
+        p2card = playerTwoHand[index];
         $('#player2Card' + (index + 1)).text(p2card);
     }
   }
-  replaceCard(){
+  replaceCard(cardIndex){
     console.log('replaceCard')
-    player1hand.pop();
     player1.removeCard();
     player1.receiveCards(playerdeck.dealCards(1));
     this.displayCards();
