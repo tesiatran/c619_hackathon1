@@ -4,7 +4,6 @@ class ControlCards {
   }
 
   displayCards() {
-    console.log('displayCards');
     var p1card = null;
     var p2card = null;
     var playerOneHand = player1.getCards();
@@ -20,9 +19,8 @@ class ControlCards {
         $('#player2Card' + (index + 1)).text(p2card);
     }
   }
-  
+
   replaceCard(cardIndex){
-    console.log('replaceCard')
     player1.removeCard(cardIndex);
     player1.receiveCards(playerdeck.dealCards(1));
     this.displayCards();
