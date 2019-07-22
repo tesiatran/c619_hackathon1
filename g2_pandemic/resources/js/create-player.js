@@ -18,12 +18,10 @@ class Player{
   }
 
   removeCard(cardIndex){
-    console.log('removeCard');
     this.cards.splice(cardIndex,1);
   }
 
   getCards(){
-    console.log('getCards')
     return this.cards;
   }
 
