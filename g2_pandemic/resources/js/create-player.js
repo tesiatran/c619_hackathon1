@@ -37,8 +37,9 @@ class Player{
       foundResearch = true;
       researchLocation = this.location;
       gameTerminalDisplay.researchMessage();
+      $('#cureFound')[0].play();
     } else{
-      // this.treat();
+      $('#low')[0].play();
     }
   }
 

@@ -90,7 +90,6 @@ function handleCardClick(event) {
       cardName = cardName.slice(0, 3);
       var cityToCure = cityList[cardName];
       cityToCure.cureCity();
-      console.log('cityToCure ', cityToCure);
       gameControlCards.replaceCard(cardData);
       var style = {
          'border-radius': '15px',
@@ -98,6 +97,7 @@ function handleCardClick(event) {
          'border-width': '3px',
          'border-style': 'solid'
       }
+      $('#high')[0].play();
       $('.' + cardName).css(style);
       foundResearch = false;
       researchCenterCity = researchStatus.randomResearch();
