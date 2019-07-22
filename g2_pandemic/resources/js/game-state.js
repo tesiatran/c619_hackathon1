@@ -15,11 +15,12 @@ class GameState{
     this.playerTwo = new Player("purple");
   }
 
-  // // Calls functions to be called after a player ends their turn
+  // // function to be called after a player ends their turn
   // endPlayerTurn(){
 
   // }
-  // // Calls functions to be called after all player ends their turns
+
+  // // function to be called after all players end their turn
   // endGameTurn(){
 
   // }
