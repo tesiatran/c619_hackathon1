@@ -24,9 +24,9 @@ class GameStats{
   }
 
   cureCity(cityName){
-    if(this.uncuredCities.includes(cityName) && eval(playerOne.location).researchStation === true){
+    if(this.uncuredCities.includes(cityName) && playerOne.location.researchStation === true){
       this.cities[this.cities.indexOf(cityName)].diseaseCured = true;
-      this.curedCities.push(eval(cityName));
+      this.curedCities.push(cityName);
       this.uncuredCities.splice(this.uncuredCities.indexOf(cityName), 1);
     }
   }
