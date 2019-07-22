@@ -74,6 +74,7 @@ function initializeApp(){
    directFlight.addClickHandler();
    shuttleFlight.addClickHandler();
    gameControlCards.displayCards();
+
    gameTerminalDisplay.startGameMessage();
    // $("#outbreak").text("OUTBREAKS: " + outbreakCounter);
    // $('.playerHandContainer .player_1').on('click', function(){
@@ -94,6 +95,7 @@ function handleCardClick(event) {
       'border-style': 'solid'
    }
    $('.' + cardName).css(style);
+
 }
 
 var playerOne = new Player("red", ".playerOne");
