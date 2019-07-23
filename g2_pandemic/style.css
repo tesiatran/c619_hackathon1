@@ -371,3 +371,6 @@ body{
 audio {
   dislplay : none;
 }
+#templates{
+   display: none;
+}

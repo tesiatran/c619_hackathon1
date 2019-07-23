@@ -79,6 +79,9 @@ function initializeApp(){
    gameControlCards.displayCards();
    gameTerminalDisplay.startGameMessage();
 
+   game.addPlayer('Red');
+   game.addPlayer('Purple');
+
    $('.playerHandContainer .player_1').on("click", handleCardClick);
 }
 

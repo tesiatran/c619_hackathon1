@@ -3,11 +3,15 @@ class GameState{
     this.handleClick = this.handleClick.bind(this);
     this.currentEvent = event;
     this.cityObjects = [];
+    this.playerArray = [];
+    this.currentPlayer = 0;
     this.players = 2;
   }
 
-  createPlayers(){
-    this.playerOne = new Player("red");
-    this.playerTwo = new Player("purple");
+  createPlayer(name){
+    var player = new Player(name);
+    this.playerArray.push(player);
+    var domElement = player.render();
+    $(".allPlayersContainer").append(domElement);
   }
 }

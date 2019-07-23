@@ -7,7 +7,11 @@ class Player{
     this.color = color;
     this.researchStation = researchCenterCity;
     this.playerClass = playerClass;
-    $('.playerOne').addClass('noViz')
+    $('.playerOne').addClass('noViz');
+    this.elements = {
+      container: null,
+      cards: []
+    }
     this.renderMove();
   }
 
@@ -72,5 +76,15 @@ class Player{
     } else{
 
     }
+  }
+  render(){
+    this.elements.container = $("#templates .playerContainer").clone();
+    for(var cardIndex = 0; cardIndex < 3; cardIndex++){
+      var card = this.elements.container.find('[data-card='+cardIndex+']';
+      this.elements.cards.push( card );
+      this.elements.container.append(card);
+    }
+    return this.elements.container;
+
   }
 }
